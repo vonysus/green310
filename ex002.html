@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표와 리스트 예제</title>
+</head>
+<body>
+    <h1>표와 리스트 예제</h1>
+    <h2>리스트 예제 001</h2>
+
+    <ul>
+        <li><b>과일</b>
+            <ol>
+                <li>딸기</li>
+                <li>사과</li>
+                <li>포도</li>
+            </ol>
+        </li>
+        <li><b>채소</b>
+            <ol>
+                <li>상추</li>
+                <li>배추</li>
+                <li>고추</li>
+            </ol>
+        </li>
+    </ul>
+
+    <ul>
+        <li>따뜻한 음료
+            <ol>
+                <li>커피</li>
+                <li>녹차</li>
+                <li>둥글레차</li>
+                
+            </ol>
+        </li>
+
+        <li>차가운 음료</li>
+            <ul>
+                <li>커피</li>
+                <li>스무디</li>
+                <li>식혜</li>
+            </ul>
+    </ul>
+    <hr>
+
+    <h2>리스트 예제 002 - 자동쓰기활용</h2>
+
+    <ul>
+        <li>따뜻한 음료
+            <ol>
+                <li>커피</li>
+                <li>녹차</li>
+                <li>둥글레차</li>
+            </ol>
+        </li>
+        <li>차가운 음료
+            <ul>
+                <li>커피</li>
+                <li>스무디</li>
+                <li>식혜</li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <p><b>잘못된 예시</b><br>
+        ul>li*3>a
+        수정을 한 다음에 Emmet이 안나타나면 적용안됨.
+    </p>
+
+    <p>emmet 활용법</p>
+
+    <p>부모자를 기점으로 부등호를 표현하고 갯수는 *로 나타내며 삽입내용은 {꽃괄호} 내부에 작성하고
+        연결된 숫자를 지정할 경우 $로 표현한다.
+    </p>
+
+    <ul>
+        <li><a href="#">menu 1</a></li>
+        <li><a href="#">menu 2</a></li>
+        <li><a href="#">menu 3</a></li>
+        <li><a href="#">menu 4</a></li>
+        <li><a href="#">menu 5</a></li>
+    </ul>
+
+    <h2>표 예제 001</h2>
+    <!-- 정답파일 -->
+    <table border="1">
+        <tr>
+            <td colspan="3">공연요금</td>
+        </tr>
+        <tr>
+            <td>구분</td>
+            <td>R석</td>
+            <td>S석</td>
+        </tr>
+        <tr>
+            <td>성인</td>
+            <td>50,000원</td>
+            <td>30,000원</td>
+        </tr>
+        <tr>
+            <td>청소년</td>
+            <td>40,000원</td>
+            <td>20,000원</td>
+        </tr>
+        <tr>
+            <td rowspan="2">공연시간</td>
+            <td>1회차</td>
+            <td>13:00 ~ 15:00</td>
+        </tr>
+        <tr>
+            <td>2회차</td>
+            <td>16:00 ~ 18:00</td>
+        </tr>
+    </table>
+    
+    <hr>
+
+    <table border="1">
+        <tr>
+            <td colspan="6">한국의 차</td>
+        </tr>
+        <tr>
+            <td rowspan="6">뿌리차</td>
+            <td>인삼차</td>
+            <td rowspan="9">과일차</td>
+            <td>수정과</td>
+            <td rowspan="5">잎차</td>
+            <td>뽕잎차</td>
+        </tr>
+        <tr>
+            <td>당귀차</td>
+            <td>유차과</td>
+            <td>감잎차</td>
+        </tr>
+        <tr>
+            <td>생강차</td>
+            <td>구기자차</td>
+            <td>솔잎차</td>
+        </tr>
+        <tr>
+            <td>칡차</td>
+            <td>대추차</td>
+            <td>국화차</td>
+        </tr>
+        <tr>
+            <td>둥글레차</td>
+            <td>오미자차</td>
+            <td>이슬차</td>
+        </tr>
+        <tr>
+            <td>마차</td>
+            <td>매실차</td>
+            <td rowspan="4">기타</td>
+            <td>두충차</td>
+        </tr>
+        <tr>
+            <td rowspan="3">곡물차</td>
+            <td>보리차</td>
+            <td>모과차</td>
+            <td>영지버섯차</td>
+        </tr>
+        <tr>
+            <td>옥수수차</td>
+            <td>산수유차</td>
+            <td>귤강차</td>
+        </tr>
+        <tr>
+            <td>현미차</td>
+            <td>탱자차</td>
+            <td>쌍화차</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <h2>표예제 002</h2>
+    <!--정답코드-->
+    <table border="1">
+        <tr>
+            <td colspan="6">한국의 차</td>
+        </tr>
+        <tr>
+            <td rowspan="6">뿌리차</td>
+            <td>인삼차</td>
+            <td rowspan="9">과일차</td>
+            <td>수정과</td>
+            <td rowspan="5">잎차</td>
+            <td>뽕잎차</td>
+        </tr>
+        <tr>
+            <td>당귀차</td>
+            <td>유자차</td>
+            <td>감잎차</td>
+        </tr>
+        <tr>
+            <td>생강차</td>
+            <td>구기자차</td>
+            <td>솔잎차</td>
+        </tr>
+        <tr>
+            <td>칡차</td>
+            <td>대추차</td>
+            <td>국화차</td>
+        </tr>
+        <tr>
+            <td>둥글레차</td>
+            <td>오미자차</td>
+            <td>이슬차</td>
+        </tr>
+            <td>마차</td>
+            <td>매실차</td>
+            <td rowspan="4">기타</td>
+            <td>두충차</td>
+        </tr>
+        <tr>
+            <td rowspan="3">곡물차</td>
+            <td>보리차</td>
+            <td>모과차</td>
+            <td>영지버섯차</td>
+        </tr>
+        <tr>
+            <td>옥수수차</td>                                                                                                 <td>산수유차</td>
+            <td>귤강차</td>                     
+        </tr>
+        <tr>
+            <td>현미차</td>
+            <td>탱자차</td>
+            <td>쌍화차</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

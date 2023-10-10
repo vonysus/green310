@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃_display</title>
+
+    <!-- 폰트어썸CDN -->
+    <script src="https://kit.fontawesome.com/5201df2440.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>display란?</h1>
+
+    <p>display는 태그의 기본요소로 눈에 보이게 만드는 형태를 잡아주는 구조를 이야기하며
+        inline / block으로 대표된다.
+    </p>
+
+    <ul>
+        <li>block : 기본특성
+            <ul>
+                <li>가로값을 100%를 기준으로 하므로 자동줄바꿈 성질이 있음</li>
+                <li>대표 요소로는 hn태그, p태그, div, ul 등이 있고 몇몇 태그들은 블럭요소 안에 
+                    블럭요소를 넣을 수 없다.
+                </li>
+                <li>태그의 가장 기본 완전체로 padding, margin 등 사용의 문제가 없다.</li>
+                <li>css를 통해 블럭을 다른 요소로 다른 요소를 블럭으로 바꿀 수 있다.</li>
+            </ul>
+        </li>
+        <li>inline : 기본특성
+        <ul>
+            <li>줄바꿈되지 않으며 요소 옆으로 배치된다.</li>
+            <li>불완전체의 요소로 크기값이 지정되지 않아 padding, margin 등의 값이 정확히 적용되지 않는다.</li>
+            <li>블럭요소 안에 내용을 작성할 수 있고, 인라인 요소 안에도 들어갈 수 있으나
+                인라인 요소 안에는 블럭요소를 담을 수 없다.
+            </li>
+        </ul>
+    </li>
+    <li>inline-block요소 : 인라인과 블럭요소의 성질이 섞여 있음
+        <br>크기값, margin, padding 적용가능하며 요소 옆자리에 배치됨.</li>
+    <li>none: 요소를 사라지게함 공간도 같이 사라짐</li>
+    </ul>
+
+
+    <div class="ex001">
+
+        block <em>inline</em> <span>inline-block</span>
+
+
+    </div>
+
+    <div class="ex002">
+        블럭요소를 가운데로 보내는 방법1
+    </div>
+
+    <div class="ex003">
+        블럭요소를 가운데로 보내는 방법2
+    </div>
+
+    <style>
+        .ex001 {display: block;
+                background-color: antiquewhite;}
+        .ex001 em {background-color: aquamarine;
+                    padding: 20px;}
+        .ex001 span {background-color: palevioletred;
+                    display: inline-block;
+                    padding: 10px;}
+
+        .ex002 {background-color: violet;
+                margin-top: 50px;
+                padding: 20px 0;
+                text-align: center;}
+        .ex003 {background-color: palegreen;
+                width: 250px;
+                text-align: center;
+                margin: 0 auto;}
+
+        .ex004 {background-color: #333;
+                color:#fff;
+                text-align: center;
+                font-size: 12px;
+                padding-bottom: 10px;}
+        .ex004 i {display: block;
+                background-color: yellowgreen;
+                padding: 20px 0;
+                font-size: 28px;}
+        .ex004 em {display: block;
+                background-color: black;
+                font-style: normal;
+                font-size: 32px;
+                padding: 10px 0;
+                margin-bottom: 10px;}
+
+        .ex005 {background-color: #333;
+                text-align: center;
+                padding-bottom: 10px;
+                font-size: 12px;
+                color:white;}
+        .ex005 i {display: block;
+                font-size: 28px;
+                padding: 20px 0;
+                background-color: slateblue;}
+        .ex005 em {display: block;
+                font-style: normal;
+                font-size: 32px;
+                background-color: black;
+                padding: 10px;
+                margin-bottom: 10px;}
+
+        .ex006 {background-color: #333;
+                color: white;
+                text-align: center;
+                font-size: 12px;
+                padding-bottom: 10px;}
+        .ex006 i {display : block;
+                background-color: palevioletred;
+                font-size: 28px;
+                padding: 20px 0;}
+        .ex006 em {display: block;
+                background-color: black;
+                font-style: normal;
+                font-size: 32px;
+                padding: 20px 0;
+                margin-bottom: 10px;}
+    </style>
+
+
+    <div class="ex004">
+        <i class="fa fa-database" aria-hidden="true"></i>
+        <em>데이터베이스</em>
+        폰트어썸에서 i태그를
+        <br>통해 가져온 구조
+    </div>
+
+    <div class="ex005">
+        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <em>데이터 시각화</em>
+        해석결과는 데이터 시각화해서
+        <br>활용할 수 있게 합니다.
+    </div>
+
+    <div class="ex006">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <em>24시간 지원</em>
+        24시간 대응 팀으로
+        <br>장애에 신속하게 대응합니다.
+    </div>
+
+
+</body>
+</html>

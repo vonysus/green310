@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베이커리 홈페이지</title>
+
+    <!-- 구글폰트적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- 내부스타일시트적용 -->
+    <style>
+    /* default 설정 */
+    /* 모든태그의 margin과 padding의 설정값을 없앤다. */
+    * {margin:0; padding:0;}
+
+    /* 제일 큰 섹션 박스의 크기를 가로, 세로 화면 크기로 맞추기 */
+    div {width:100vw;
+    height: 100vh;
+    color:#fff;}
+    
+    div:nth-child(1) {background-image: url('img/bakery_001.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;}
+    div:nth-child(2) {background-color: #bbb;}
+    div:nth-child(3) {background-color: #ccc;
+                      background-image: url('img/bakery_003.jpg');
+                      background-repeat: no-repeat;
+                        background-size: cover;}
+
+    div.map {width:60vw;
+    height: 60vh;
+    background-color: lavenderblush;
+    margin-left: 20vw;}
+
+    /* 로고 가운데 보내기 */
+    h1 {text-align: center;
+    padding-top: 250px;
+    font-size: 48px;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;}
+
+    div:nth-child(1)>p {
+    width: 40vw;
+    margin-left: 30vw;
+    margin-top: 10px;
+    text-align: center;
+    font-size: large;
+    color:#fff;}
+
+    /* 두번째 박스 설정 */
+    div:nth-child(2) {
+    padding-left: 10vw;
+    box-sizing: border-box;
+    padding-top: 30vh;
+    color:#fff;
+    background-image : url('img/bakery_002.jpg');}
+
+
+    div:nth-child(2) h2 {font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    }
+
+    div ul {list-style: none;
+    margin-top: 10px;}
+
+    div li {margin-bottom: 5px;}
+    div li em {margin-left: 20px;}
+
+    /* 세번째 박스 설정 */
+    div:nth-child(3) h2 {
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    }
+
+    div.map {background: aquamarine;
+    padding: 0;}
+    
+    div.map iframe {width:100%;
+    height: 100%;}
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <div>
+        <h1>Green Bakery</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus at quos libero sapiente ex quasi veniam laboriosam utte ex quasi veniam laboriosam ut</p>
+    </div>
+    <div>
+        <h2>Menu</h2>
+        <ul>
+            <li>bakery1 <em>3,000</em></li>
+            <li>bakery2 <em>3,000</em></li>
+            <li>bakery3 <em>3,000</em></li>
+            <li>bakery4 <em>3,000</em></li>
+            <li>bakery5 <em>3,000</em></li>
+            <li>bakery6 <em>3,000</em></li>
+        </ul>
+    </div>
+    <div>
+        <h2>오시는 길</h2>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.475698928051!2d127.37507617692798!3d36.34925489298778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654be135f94b1d%3A0xf622b84763572b4!2z6re466aw7Lu07ZOo7YSw7JWE7Yq47ZWZ7JuQIOuMgOyghOuzuOygkA!5e0!3m2!1sko!2skr!4v1696576736883!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+</body>
+</html>

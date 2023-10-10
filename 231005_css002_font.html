@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font 속성</title>
+    <!-- 구글폰트 적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<h1>font 속성</h1>
+<p>글꼴, 글자크기, 글자굵기, 기울임, 줄간격, 대소문자, 글자색상 등 7가지로 정리</p>
+<em>색상을 제외한 여섯가지 속성은 한번에 작성 가능</em>
+
+<table border="1">
+<tr>
+    <td>속성</td>
+    <td>풀이</td>
+</tr>
+<tr>
+    <td>font-family</td>
+    <td>글꼴을 적용하는 속성으로 ''(따옴표)로 표기, serif(꺾임체)와 sans-serif(비꺾임체)로 구분</td>
+</tr>
+<tr>
+    <td>font-size</td>
+    <td>씨의 크기를 단위와 함께 작성 (ex. px, pt, %, em등으로 작성)
+        <br>large, small과 같이 기준 단위보다 한단계 크고 작게
+    </td>
+</tr>
+<tr>
+    <td>font-weight</td>
+    <td>bold, normal로 표기 / 숫자 표기시 600, 400이 기준</td>
+</tr>
+<tr>
+    <td>font-style</td>
+    <td>italic, normal로 표기 / 기울임체</td>
+</tr>
+<tr>
+    <td>font-variant</td>
+    <td>small-caps, normal로 표기 / 작은 대문자로 표기</td>
+</tr>
+<tr>
+    <td>line-height</td>
+    <td>행간을 나타내고 단위가 1 -> 100% 기본값이 1.6임</td>
+</tr>
+<tr>
+    <td>font</td>
+    <td>위의 내용을 한줄에 표기가능
+        <br>
+        font {1번칸 2번칸 3번칸}
+        <ul>
+            <li>1번칸 : font-weight font-style font-variants</li>
+            <li>2번칸 : font-size/line-height <em>순서변경X line-height는 생략가능</em></li>
+            <li>3번칸 : font-family</li>
+        </ul>
+
+        <b>1번칸은 생략이 가능하나, 2번칸과 3번칸은 생략X, 순서 123 변경X</b>
+    </td>
+</tr>
+</table>
+
+<div class="box1">
+    <p>웹폰트 활용법 : 구글폰트에서 폰트를 선택 후 링크 or  import를 먼저 복사해서 기입 후
+        font-family를 복사해서 적용
+    </p>
+    <p><a href="https://fonts.google.com/" target="_blank">구글폰트 바로가기</a></p>
+    <p>px과 em 그리고 pt의 크기를 알아보는 사이트</p>
+    <p><a href="http://pxtoem.com/" target="_blank">pxtoem 바로가기</a></p>
+</div>
+
+<div class="box">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore magni, et, deleniti velit, animi doloremque atque non similique quaerat soluta praesentium incidunt provident. Culpa natus illum enim itaque, nesciunt ab.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore magni, et, deleniti velit, animi doloremque atque non similique quaerat soluta praesentium incidunt provident. Culpa natus illum enim itaque, nesciunt ab.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore magni, et, deleniti velit, animi doloremque atque non similique quaerat soluta praesentium incidunt provident. Culpa natus illum enim itaque, nesciunt ab.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore magni, et, deleniti velit, animi doloremque atque non similique quaerat soluta praesentium incidunt provident. Culpa natus illum enim itaque, nesciunt ab.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore magni, et, deleniti velit, animi doloremque atque non similique quaerat soluta praesentium incidunt provident. Culpa natus illum enim itaque, nesciunt ab.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore magni, et, deleniti velit, animi doloremque atque non similique quaerat soluta praesentium incidunt provident. Culpa natus illum enim itaque, nesciunt ab.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore magni, et, deleniti velit, animi doloremque atque non similique quaerat soluta praesentium incidunt provident. Culpa natus illum enim itaque, nesciunt ab.</p>
+</div>
+
+
+<style>
+    .box p:first-child {font-family: 'Nanum Myeongjo', serif;}
+    .box p:nth-child(2) {font-size: xx-large;}
+    .box p:nth-child(3) {font-weight: 300;}
+    .box p:nth-child(4) {font-style: italic;}
+    .box p:nth-child(5) {font-variant: small-caps;}
+    .box p:nth-child(6) {line-height: 0.8;}
+    .box p:last-child {font:300 italic small-caps xx-large/0.8 'Nanum Myeongjo', serif;}
+</style>
+
+
+<h2>color</h2>
+
+<p>컬러는 글자의 색을 나타내며, background, border, shadow 등과 같이 컬러를 사용하는 공간에서 표현방식은 모두 같다.
+</p>
+
+<ul class="color">
+    <li>이름지정 : red, white, black 등</li>
+    <li>핵사코드지정 : #000000(검정), #ffffff(흰색), 단 코드이름이 중복될 경우 3자리로도 가능 (ex. #000, #fff)
+    </li>
+    <li>RGB 숫자지정 : rgb(0,0,0)검정, rgb(255, 255, 255)흰색</li>
+    <li>RGBA 숫자지정 : A - 투명도를 나타내는 alpha 값으로  0~1까지 소수점 표기</li>
+    <li>opacity : 투명도 지정한 모든 요소의 내부내용이 투명해진다.</li>
+</ul>
+
+
+<h3>그라디언트</h3>
+<p class="grd">linear / radial과 같은 형태로 gradient를 지정할 수 있으며 각각의 내용들은 진행방향과 조합된 컬러로 작성할 수 있다.</p>
+
+
+<style>
+    .color {background-color: rebeccapurple;}
+    .color li:nth-child(1) {background-color: palevioletred;}
+    .color li:nth-child(2) {background-color: #ffff00;}
+    .color li:nth-child(3) {background-color: rgb(00, 255, 00);}
+    .color li:nth-child(4) {background-color: rgba(00, 00, 00, 0.5); color: white;}
+    .color li:nth-child(5) {background-color: blue;
+                            color: #fff;
+                            opacity: 0.5;}
+    .grd {background: linear-gradient(0deg,#000,red 30%, #fff);}
+    h3 {background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);}
+
+
+</style>
+</body>
+</html>

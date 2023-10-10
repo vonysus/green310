@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS란?
+    </title>
+    <!--내부스타일시트-->
+    <style>
+        /* 코드 작성 
+        @import url("주소연결")
+        */
+    </style>
+
+    <!--외부스타일시트-->
+    <link rel="stylesheet" href="style.css">
+    <!-- href="style.css" 이부분에 연결된 주소를 작성한다. -->
+</head>
+<body>
+    <h1>CSS란?</h1>
+    <p style="color: red;">Cascading style sheet의 약자로 웹페이지를 꾸미려고 작성하는 코드입니다.
+        <br>
+        내부스타일시트, 외부스타일시트, 인라인스타일시트 등으로 세가지 종류가 있으며
+        인라인스타일시트는 태그 내부에 직접 기재하는 방식으로 우선 적용되므로 많은 내용보다는 가장 중요한 한두문장을 표현한다.
+    </p>
+    <ul>
+        <li>내부시트적용 : style 태그 안에 코드를 작성하며 body와 head 어느 공간에 있더라도 적용된다.</li>
+        <li>외부시트적용 : html 태그 내부에 link 태그로 주소를 연결하거나 스타일시트내부에 @import로 주소 연결을 하기도 한다.</li>
+        <li>인라인시트적용 : 태그 내부에 속성값으로 작성한다.</li>
+    </ul>
+
+    <h2>선택자</h2>
+    <table border="1">
+        <tr>
+            <td>선택자명</td>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>전체태그 선택 / 다수의 태그를 선택할 때 ,(콤마)를 사용하는데 html 내부에서 사용한 모든 태그를 부를 때 사용한다.</td>
+        </tr>
+        <tr>
+            <td>타입선택자</td>
+            <td>태그 이름을 그대로 가져다 쓰는 형태</td>
+        </tr>
+        <tr>
+            <td>id선택자 : #</td>
+            <td>id가 붙어있는 태그를 부를 때 사용하는 형태</td>
+        </tr>
+        <tr>
+            <td>class선택자 : .</td>
+            <td>class가 붙어있는 태그를 부를 때 사용하는 형태
+                <br>클래스 작성 뒤에 한 칸 띄어쓰기 후 뒤에 있는 클래스만 불러서도 사용가능
+            </td>
+        </tr>
+        <tr>
+            <td>자식선택자 : 선택자>선택자 or 선택자 선택자</td>
+            <td>현재 요소 하위에 들어가 있는 요소를 부를 때 자손자 방식 / 후손자 방식으로 사용가능</td>
+        </tr>
+        <tr class="box">
+            <td class="box">종속선택자 (결합형) : 선택자.클래스명 or 선택자#클래스명</td>
+            <td>태그 이름 중에 class or id 이름을 갖고 있는 요소만 특정지어 부르는 형태</td>
+        </tr>
+        <tr>
+            <td>세부클래스</td>
+            <td>
+                <ul>
+                    <li class="f">:first-letter - 요소의 첫글자</li>
+                    <li>:first-child / last-child - 요소 형제 중 첫번째 or 마지막 요소를 선택</li>
+                    <li>:before / :after - 요소의 맨앞 or 맨뒤에 추가적으로 html에 없는 요소를 만들어내는
+                        가상요소
+                    </li>
+                </ul>
+            </td>
+        </tr>
+
+        <style>
+            .box {background-color:lavenderblush;}
+            td.box {background-color: lavender;}
+            .f::first-letter{font-size: 30px;}
+            td>ul>li:last-child{background-color: palevioletred; color:gainsboro}
+            td>ul::before{content: '가상요소제작:before';
+                        color:lightseagreen;
+                    font-size: 28px;}
+            td>ul::after{content: '가상요소제작:after';}
+        </style>
+    </table>
+</body>
+</html>

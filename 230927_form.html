@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력양식태그</title>
+</head>
+<body>
+    <h1>입력양식태그란?</h1>
+    <p>form 태그라는 큰 부모 아래 input 태그라는 입력양식을 작성하는 구조</p>
+    <p>유저가 입력하거나 작성하는 구조는 input 태그의 속성으로 주로 변환하며 input 태그 외에
+        다른 태그들도 몇몇있다.
+    </p>
+
+    <ul>
+        <li>특징1 - form 태그는 눈에 보이지 않아 사용하지 않는 경우가 있는데
+            사용하지 않으면 DB와 연동할 수 없다.
+        </li>
+        <li>특징2 - form 태그 자체는 자동 줄바꿈 기능을 갖고 있고 내부에 작성하는
+            input 태그 등은 인라인 태그이다.
+        </li>
+    </ul>
+    <style>
+        .box[type="text"] {background-color: palevioletred;}
+        
+    </style>
+
+    <form action="http://www.google.com/search" method="get">
+        <label for="search-query">검색어</label>
+        <input class="box" type="text" id="search-query" name="q">
+        <button type="submit">검색</button>
+    </form>
+
+
+
+
+
+
+
+</body>
+</html>

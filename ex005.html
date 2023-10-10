@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>겨울방학특강신청</title>
+
+    <!-- 스타일시트작성 -->
+    <style>
+body {padding: 0;
+    margin: 0;}
+        h1 {margin: 0;}
+        legend {font-size: 14px;}
+        .no1 {font-weight: bold;}
+        #study {margin-top: 20px;}
+
+        fieldset {margin: 0;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+        ul {list-style: none;}
+        li {margin-bottom: 10px;}
+        li label {color: green;
+                    width: 120px;
+                    display: inline-block;
+                    text-align: right;
+                    margin-right: 10px;
+                }
+
+        div {text-align: center;}
+    </style>
+
+</head>
+<body>
+
+    <h1>겨울방학특강신청</h1>
+    <form action="">
+
+        <fieldset>
+            <legend class="no1">수강신청인</legend>
+            <label for="schoolNum">학번</label>
+            <input type="text" id="schoolNum">
+            <label for="name">이름</label>
+            <input type="text" id="name">
+        </fieldset>
+        <fieldset>
+            <legend> 수강과목을 선택하세요</legend>
+            <ul>
+                <li>
+                    <label for="color">선호색상</label>
+                    <input type="color" id="color">
+                </li>
+                <li><label for="subj">신청과목(회화)</label>
+                <input type="radio" id="subj" name="subj" checked>
+                <span>영어회화(초급)</span>
+                <input type="radio" id="subj" name="subj">
+                <span>영어회화(중급)</span>
+                <input type="radio" id="subj" name="subj">
+                <span>영어회화(고급)</span>
+            </li>
+                <li>
+                    <label for="to">
+                        신청과목(자격)
+                    </label>
+                    <input type="radio" id="to" name="to">
+                    <span>TOEIC</span>
+                    <input type="radio" id="to" name="to">
+                    <span>TOPLE</span>
+                    <input type="radio" id="to" name="to">
+                    <span>OPIC</span>
+                </li>
+                <li>
+                    <label for="like">
+                        관심분야
+                    </label>
+                    <input type="checkbox" id="like" name="like">
+                    <span>문법</span>
+                    <input type="checkbox" id="like" name="like">
+                    <span>Vocaburary</span>
+                    <input type="checkbox" id="like" name="like">
+                    <span>회화</span>
+                    <input type="checkbox" id="like" name="like">
+                    <span>리스닝</span>
+                    <input type="checkbox" id="like" name="like">
+                    <span>뉴스청취</span>
+                    <input type="checkbox" id="like" name="like">
+                    <span>독해</span>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend> 강의시간을 선택해 주세요 </legend>
+            <ul>
+                <li>
+                    <label for="week">
+                        개강 주
+                    </label>
+                    <input type="week" id="week">
+                   
+
+                </li>
+                <li>
+                    <label for="time">
+                        강의시간
+                     </label>
+                     <input type="time" id="time">
+                </li>
+            </ul>
+        </fieldset>
+       <div>
+            <input type="submit" value="수강신청">
+            <input type="reset" value="다시쓰기">
+       </div>
+
+
+    </form>
+
+
+    <form action="" id="study">
+
+        <fieldset>
+            <legend class="no1">수강신청인</legend>
+            <label for="schoolNum">학번</label>
+            <input type="text" id="schoolNum">
+            <label for="name">이름</label>
+            <input type="text" id="name">
+        </fieldset>
+        <fieldset>
+            <legend> 수강과목을 선택하세요</legend>
+            <ul>
+                <li>
+                    <label for="color">선호색상</label>
+                    <input type="color" id="color">
+                </li>
+                <li><label for="subj">신청과목(회화)</label>
+                <input type="radio" id="subj" name="subj" checked>
+                <span>영어회화(초급)</span>
+                <input type="radio" id="subj" name="subj">
+                <span>영어회화(중급)</span>
+                <input type="radio" id="subj" name="subj">
+                <span>영어회화(고급)</span>
+            </li>
+                <li>
+                    <label for="to">
+                        신청과목(자격)
+                    </label>
+                    <input type="radio" id="to" name="to">
+                    <span>TOEIC</span>
+                    <input type="radio" id="to" name="to">
+                    <span>TOPLE</span>
+                    <input type="radio" id="to" name="to">
+                    <span>OPIC</span>
+                </li>
+                <li>
+                    <label for="like">
+                        관심분야
+                    </label>
+                    <input type="checkbox" id="like" name="like">
+                    <span>문법</span>
+                    <input type="checkbox" id="like" name="like">
+                    <span>Vocaburary</span>
+                    <input type="checkbox" id="like" name="like">
+                    <span>회화</span>
+                    <input type="checkbox" id="like" name="like">
+                    <span>리스닝</span>
+                    <input type="checkbox" id="like" name="like">
+                    <span>뉴스청취</span>
+                    <input type="checkbox" id="like" name="like">
+                    <span>독해</span>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend> 강의시간을 선택해 주세요 </legend>
+            <ul>
+                <li>
+                    <label for="week">
+                        개강 주
+                    </label>
+                    <input type="week" id="week">
+                   
+
+                </li>
+                <li>
+                    <label for="time">
+                        강의시간
+                     </label>
+                     <input type="time" id="time">
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="수강신청">
+        <input type="reset" value="다시쓰기">
+
+
+    </form>
+    
+</body>
+</html>

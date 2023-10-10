@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력양식태그</title>
+</head>
+<body>
+
+    <h1>입력양식태그</h1>
+    <h2>input 태그란?</h2>
+    <p> 다양한 폼에서 사용자가 입력한 정보를 받을때 사용하는 태그</p>
+
+    <table border="1">
+        <tr>
+            <td>종류</td>
+            <td>설명</td>
+            <td>예시</td>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>한줄짜리 텍스트입력박스</td>
+            <td><input type="text"></td>
+        </tr>
+       <tr>
+            <td>password</td>
+            <td>비밀번호입력박스 ****으로 나타남</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>search</td>
+            <td>검색창입력박스 X아이콘이나타남</td>
+            <td><input type="search"></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>이메일입력박스 입력양식과다를경우경고내용이나타남</td>
+            <td>
+                <form>
+                    <input type="email">
+                    <input type="submit">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>tel</td>
+            <td>전화번호를 입력하는박스/  pattern을 설정할수 있음 </td>
+            <td>
+                <form action="">
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+                    <input type="submit">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>checkbox</td>
+            <td>2개이상의 복수선택이 가능</td>
+            <td>
+                <input type="checkbox">국어
+                <input type="checkbox">수학
+            </td>
+        </tr>
+        <tr>
+            <td>radio</td>
+            <td>단일선택을 해야하는 동그란버튼 / name이라는 속성이 같을경우에만 적용</td>
+            <td>
+
+                <form action="">
+                    <input type="radio" name="man">여성
+                    <input type="radio" name="man">남성
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>number</td>
+            <td>숫자를 조절하는 박스 다양한 속성으로 조절가능 
+                <ul>
+                    <li>min  - 최소값 min아래값으로 내려가지않음</li>
+                    <li>max - 최대값 max 위값으로 올라가지 않음</li>
+                    <li>step - 단계값 지정된숫자만큼씩 올라감</li>
+                    <li>placeholder - 예시값 읽을수있게 보여주는글 </li>
+                </ul>
+            </td>
+            <td>
+                <input type="number" min="0" max="10" step="2" placeholder="숫자를지정하세요">
+            </td>
+        </tr>
+        <tr>
+            <td>range</td>
+            <td>슬라이더막대바</td>
+            <td>
+                <input type="range">
+            </td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>컬러를 지정할수 있는 입력박스</td>
+            <td><input type="color"></td>
+        </tr>
+
+        <tr>
+               <td>date,month,week,time,datetime,datetime-local</td>
+            <td>local 기준으로 날짜,시간등의 정보를 보여주는 박스</td>
+            <td>
+                <input type="datetime-local">
+            </td>
+        </tr>
+        <tr>
+            <td>button</td>
+            <td>일반버튼을 만듬 , button태그와는 다름</td>
+            <td><input type="button" value="버튼"></td>
+        </tr>
+        <tr>
+            <td>submit</td>
+            <td>확인버튼 으로 제출할때 주로 사용<br>
+            from태그 내부에서만 작동됨 </td>
+            <td>
+                <form action="">
+                    <input type="text">
+                    <input type="submit">
+                    <input type="reset">
+                </form>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>reset</td>
+            <td>다시작성버튼 으로 기존내용이 지워짐 / form 태그 내부에서만 설정가능</td>
+            <td>
+                <input type="reset">
+            </td>
+        </tr>
+        
+        <tr>
+            <td>file</td>
+            <td>파일을 첨부할수 있는 버튼</td>
+            <td>
+                <input type="file">
+            </td>
+        </tr>
+        
+        
+        
+        
+
+        
+    </table>
+
+
+
+    <h2>fieldset 태그</h2>
+    <p>하나의 공간박스를 만드는 구조의 입력양식</p>
+
+    <h2>legend 태그</h2>
+    <p>fieldset 태그의 박스 안쪽에 작성되는 제목양식</p>
+
+    <h2>
+        label 태그
+    </h2>
+    <p>
+        input태그의 설명을 작성할때 세트로 제공되는 구조형식
+        인라인형식으로 input 옆쪽으로 붙어서 나타남 <br>
+        input id = '이름' label for = '이름'
+    </p>
+<h2>input 기타속성</h2>
+
+<table border="1">
+    <tr>
+        <td>autofocus</td>
+        <td>자동으로 지정해서 위치를 알려주는 구조</td>
+        <td>
+            <input type="text" autofocus>
+        </td>
+    </tr>
+    <tr>
+        <td>readonly</td>
+        <td>text입력필드에 지정된글자를 읽게만 하는 구조</td>
+        <td><input type="text" value="읽기전용" readonly></td>
+    </tr>
+    <tr>
+        <td>required</td>
+        <td>필수작성요소_내용이 빠져있을경우 확인창이 눌리지않음</td>
+        <td>
+            <form action="">
+                <input type="text" required>
+                <input type="submit" value="필수작성">
+            </form>
+        </td>
+    </tr>
+</table>
+
+
+
+
+    <h3>예제</h3>
+
+    <form action="">
+
+        <fieldset>
+
+            <legend>배송 정보</legend>
+            <ul>
+                <li> <label for="shop">주문상품</label><input type="text" value="상품용 3KG" readonly></li>
+                <li> <label for="name">이름</label><input type="text" id="name" value="홍길동"></li>
+                <li><label for="add">주소</label><input type="text" id="add"  required></li>
+                <li><label for="email">이메일</label> <input type="email" id="email"></li>
+                <li><label for="tel">연락처</label><input type="tel" id="tel" placeholder="하이픈빼고 입력해주세요" title="012345678"></li>
+                <li><label for="date">배송지정<em>(주문일로부터 최소 3일이후)</em></label>
+                <input type="date"></li>
+
+            </ul>
+        </fieldset>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+    
+    <style>
+
+        body{padding-bottom: 500px;}
+    </style>
+    
+</body>
+</html>

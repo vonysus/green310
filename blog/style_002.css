@@ -1,0 +1,443 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    border: none;
+}
+
+
+
+/* 로고 설정 */
+.logo {}
+.logo h1 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Paytone One', sans-serif;
+    color: #be9dff;
+}
+
+/* gnb 설정 */
+/* after 정렬 
+.gnb {}
+.gnb ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.gnb ul li {
+    float: left;
+    width: auto;
+    padding: 5px;
+}
+.gnb ul li a {
+    display: block;
+    width: auto;
+    }
+.gnb ul li:hover {
+    background-color: aquamarine;
+}*/
+
+/* flex 정렬 */
+.gnb {}
+.gnb ul {
+    display: flex;
+    }
+.gnb ul li {
+}
+
+.gnb ul li a {
+    padding: 15px;
+    display: block;
+    font-size: 14px;
+}
+
+.gnb ul li a:hover {
+    background-color: #be9dff;
+    color: white;
+}
+
+
+/* story 설정 */
+.story {}
+.story h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.story i {
+    margin-bottom: 20px;
+}
+
+.story h1 {
+    font-size: 26px;
+    font-weight: 400;
+    border-left: 10px solid pink;
+    padding-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+}
+.story p {
+    padding-bottom: 20px;
+}
+
+.story p img {
+    width: 100%;
+    height: auto;
+}
+
+/* story category */
+.story-cat {
+    margin-bottom: 12px;
+}
+
+.story-cat ul{
+    display: flex;
+}
+
+.story-cat ul li a {
+    display: block;
+    background-color: #be9dff;
+    color: white;
+    padding: 4px 8px;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.story-cat ul li a:hover {
+    background-color: #a07de5;
+    color: white;
+}
+
+
+/* sns 설정 */
+.sns {
+    margin-top: 40px;
+}
+.sns ul {
+    display: flex;
+}
+.sns ul li {
+    width: 33.3333%;
+    text-align: center;
+    padding: 12px;
+}
+
+.sns ul li a {
+    color: #fff;
+    
+}
+.sns ul li:nth-child(1) {
+    background-color: #1da1f2;
+}
+
+.sns ul li:nth-child(2) {
+
+    background-color: #1877f2;
+}
+
+.sns ul li:nth-child(3) {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#833ab4+0,f77737+100 */
+background: linear-gradient(to right,  #833ab4 0%,#f77737 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+
+/* sidemenu 설정 */
+.sidemenu {
+    margin-bottom: 30px;
+}
+.sidemenu h1 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    border-bottom: dotted 2px #aaa;
+}
+.sidemenu ul {}
+.sidemenu ul li {
+}
+.sidemenu ul li a {
+    display: block;
+    padding: 8px;
+}
+
+.sidemenu ul li:hover {
+    background-color: #a07de5;
+}
+
+.sidemenu ul li:hover a {
+    color: white;
+}
+
+.sidemenu ul li a i {
+        margin-right: 8px;
+        color: #a07de5;
+}
+
+.sidemenu ul li:hover i {
+    color: white;
+}
+
+
+
+/* recommend 설정 */
+.recommend {
+    margin-bottom: 30px;
+}
+.recommend h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border-bottom: dotted 2px #aaa;
+}
+.recommend ul {}
+.recommend ul li {
+    margin-bottom: 12px;
+}
+.recommend ul li a {
+    display: block;
+    position: relative;
+}
+
+.recommend img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.recommend .txt {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+/* popular 설정 */
+.popular {}
+.popular h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border-bottom: dotted 2px #aaa;
+}
+.popular ul {}
+.popular ul li {}
+.popular ul li a {
+    display: block;
+    padding: 5px;
+    color: #a07de5;
+    border-bottom: dotted 1px #ddd;
+}
+
+.popular ul li a:hover {
+    background-color: #a07de5;
+}
+
+.popular ul li a:hover .txt {
+    color: white;
+}
+.popular ul li a:hover span {
+    color: white;
+}
+
+
+/* img와 txt 가로정렬 */
+
+.popular a::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.popular img {
+    float: left;
+}
+.popular .txt {
+    float: none;
+    margin-left: 60px;
+    padding-left: 15px;
+}  
+.popular span {
+    display: block;
+    color: #666;
+    font-size: 12px;
+}
+
+
+/* relation 관련 기사 설정 */
+
+.relation {
+    margin-top: 40px;
+    background-color: #f0f0d4;
+    padding: 20px;
+}
+.relation h1 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #727224;
+}
+.relation ul {
+    display: flex;
+}
+.relation ul li {
+    width: 25%;
+}
+.relation ul li a {
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.relation img {
+    background-size: cover;
+}
+.relation .txt {}
+
+
+
+
+/* copy 설정 */
+.copy {
+    font-size: 12px;
+}
+
+
+/* 박스 2를 바형태로 디자인 */
+.box2 {
+    background-color: #ffecf0;
+}
+
+
+
+
+/* 전체사이즈 설정 */
+.box1, .boxA, .gnb, .box5 {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 위아래 여백 설정 */
+
+.box1 {
+    padding: 12px 0;
+}
+
+.boxA {
+    margin-top: 24px;
+    margin-bottom: 40px;
+
+}
+
+.box5 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+
+/* 반응형 웹 설정 구간 #######################################*/
+/* 모바일 (599px 이하) 구간 */
+@media(max-width:599px){
+    
+    .relation ul li {
+        width:50%;
+    }
+
+}
+
+
+/* 태블릿 (600px 이상 ~ 767px 이하) 구간 */
+@media(min-width:600px) and (max-width:767px){
+
+}
+
+/* 데스크탑 (768px 이상) 구간 */
+@media(min-width:768px) {
+    
+/* 박스 3, 박스 4 설정 */
+/* after 정렬 
+.box3 {
+    float: left;
+    width: 70%;
+}
+.box4 {
+    float: left;
+    width: 30%;}
+.boxA::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
+
+/* flex 정렬 */
+.boxA {display: flex;}
+.box3 {width: 70%;}
+.box4 {width: 30%;}
+
+.box3 {
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.boxA-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxA-1>article {
+    width:50%;
+}
+
+.boxA-1>article:nth-child(odd) {
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.boxA-1>article:nth-child(even) {
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.boxA-1 img {
+    height: 320px;
+}
+
+  /* summary h1 글자크기변경 */
+@media(min-width:900px){
+    .summary h1 {font-size: 22px;}
+}
+
+
+
+/* 크기 고정 구간 */
+/* 1290px 이상일 때 body의 크기값을 1280px로 고정 */
+    @media(min-width:1290px){
+  /* 전체사이즈 설정 */
+.box1, .boxA, .gnb, .copy {
+    width: 1280px;
+    margin: 0 auto;
+    }
+}}
+

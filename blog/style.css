@@ -1,0 +1,577 @@
+/* 언어 설정 */
+@charset "UTF-8";
+
+/* 구글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+/* font-family: 'Paytone One', sans-serif; */
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  border: none;
+}
+
+
+
+/* 로고 설정 */
+.logo {
+}
+.logo h1 {
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'Paytone One', sans-serif;
+  color: #83a4a8;
+}
+
+/* gnb 설정 */
+.gnb {
+}
+.gnb ul {
+}
+.gnb ul li {
+}
+.gnb ul li a {
+  padding: 15px;
+  display: block;
+  font-size: 14px;
+}
+
+.gnb ul li a:hover {
+  background-color: #75dbe7;
+}
+
+/* gnb li의 가로 정렬 */
+/* after 정렬 */
+.gnb ul li {
+  float: left;
+  width: auto;
+}
+.gnb ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* flex 정렬 
+.gnb ul {
+  display: flex;
+}*/
+
+/* story 설정 */
+.story {
+
+}
+.story h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.story p {
+  margin-bottom: 20px;
+}
+.story p img {
+  width: 100%;
+  height: auto;
+
+}
+.story h2 {
+  font-weight: normal;
+  font-size: 26px;
+  border-left: 10px solid #7cbac1;
+  padding-left: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* story category */
+
+.story-cat {
+  margin-bottom: 25px;
+}
+.story-cat ul {
+  display: flex;
+}
+.story-cat ul li {
+  margin-right: 5px;
+}
+.story-cat ul li a {
+  display: block;
+  padding: 3px 5px;
+  background-color: #75dbe7;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.story-cat ul li a:hover {
+  background-color: #94ecf6;
+}
+
+/* 작성일 설정 */
+.story-info {
+  margin-bottom: 20px;
+  margin-top: -10px;}
+.story-info i {
+  color: #aaa;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+/* 특집기사 설정 */
+.sidemenu {
+  margin-bottom: 30px;
+}
+.sidemenu h1 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  border-bottom: dotted 2px #ddd;
+}
+.sidemenu ul {}
+.sidemenu ul li {}
+.sidemenu ul li a {
+  display: block;
+  padding: 5px;
+}
+
+.sidemenu i {
+  margin-right: 5px;
+  color: #888;
+}
+
+.sidemenu ul li a:hover {
+  background-color: #eee;
+}
+
+
+
+
+/* 추천기사 설정 */
+.recommend {
+  margin-bottom: 30px;
+}
+.recommend h1 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  border-bottom: dotted 2px #ddd;
+}
+.recommend ul {}
+.recommend ul li {
+  margin-bottom: 10px;
+}
+.recommend ul li a {
+  display: block;
+  position: relative;
+}
+
+.recommend img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.recommend .txt {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding : 5px 10px;
+  box-sizing: border-box;
+}
+
+
+/* 인기기사 설정 */
+.popular {}
+.popular h1 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  border-bottom: dotted 2px #ddd;
+}
+.popular ul {}
+.popular ul li {}
+.popular ul li a {
+  display: block;
+  padding: 5px;
+  color: #2288bb;
+  border-bottom: dotted 1px #ddd;
+}
+
+.popular ul li a:hover {
+  background-color: #eee;
+}
+
+/* img와 txt 가로정렬 */
+.popular a::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.popular img {
+  float: left;
+}
+.popular .txt {
+  float: none;
+  margin-left: 60px;
+  padding-left: 15px;
+}
+
+.popular span {
+  display: block;
+  color: #666;
+  font-size: 12px;
+}
+
+
+/* sns 설정 */
+.sns {
+  margin-top: 40px;
+}
+.sns ul {
+  display: flex;
+}
+.sns ul li {
+  width: 33.3333%;
+  text-align: center;
+}
+.sns ul li a {
+  display: block;
+  padding: 10px 5px;
+  color: #fff;
+}
+
+.sns li:nth-child(1) a {
+  background-color: #1da1f2;
+}
+
+.sns li:nth-child(2) a {
+  background-color: #1877f2;
+}
+
+.sns li:nth-child(3) a {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#833ab4+0,f77737+100 */
+background: linear-gradient(to right,  #833ab4 0%,#f77737 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+/* 그라데이션을 활용하는 제너레이터 주소 
+https://www.colorzilla.com/gradient-editor/*/
+
+
+/* 관련기사설정 */
+
+.relation {
+  margin-top: 40px;
+  background-color: #f0f0d4;
+  padding: 20px;
+}
+.relation h1 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #727224;
+}
+.relation ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.relation ul li {
+  width: 25%;
+}
+.relation ul li a {
+  display: block;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.relation img {
+  width: 100%;
+}
+.relation .txt {}
+
+
+
+/* 카피라이트 설정 */
+.copy {}
+.copy p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Top 페이지 설정--------------------------------------------------------- */
+
+/* summary 설정 */
+
+.summary {
+  margin-bottom: 20px;
+}
+.summary a {
+  display: block;
+  border: 1px solid #ddd;
+}
+.summary img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  vertical-align: bottom;
+  background-size: cover;
+}
+
+.summary h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.summary p {
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+.summary .more {
+  background-color: #3077be;
+  display: inline-block;
+  padding: 5px 15px;
+  color: #fff;
+}
+
+.summary span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.summary a:hover {
+  box-shadow: 0 0 10px #ddd;
+}
+
+
+/* pagination 설정 */
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination ul {
+  display: flex;
+}
+.pagination ul li {}
+.pagination ul li a {
+  display: block;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: solid 1px #aaa;
+  margin: 0 5px;
+}
+.pagination ul li:nth-child(1) a {
+  background-color: #ccc;
+}
+
+
+
+
+/* 모든 페이지 설정 구간------------------------------------------------------ */
+
+/* 박스2를 바형태로 디자인 */
+.box2 {
+  background-color: #7cbac1;
+}
+
+/* 박스5 위에 구분선 넣기 */
+.box5 {
+  border-top: solid 1px #ddd;
+}
+
+
+
+/* 위아래 간격 조절 */
+/* .box1 
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.boxA {
+  margin-top: 40px;
+  margin-bottom: 30px;
+} */
+
+
+.box1 
+{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.box3 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.box4 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.box5 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* 메인페이지 박스A 위아래 설정 */
+.top .boxA {
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+}
+
+/* 좌우 여백 설정 */
+.box1, .boxA, .gnb, .copy {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* .box1 {background-color: aquamarine;}
+.boxA {background-color: beige;} 
+배경색이 들어갈 것을 대비하여 padding으로 사이값 설정
+*/
+
+
+/* 반응형 웹 설정 구간 #############################################################*/
+
+/* 모바일 구간 */
+/* 599px 이하 구간 */
+@media(max-width:599px){
+  
+  .relation ul li {
+    width: 50%;
+  }
+
+
+
+
+
+
+}
+
+/* 태블릿 구간 */
+/* 600px 이상 ~ 767px 이하 구간 */
+@media(min-width:600px) and (max-width:767px){
+
+
+
+}
+
+
+
+
+
+
+
+/* 데스크탑 구간 */
+/* 768px 이상 구간 */
+@media(min-width:768px){
+  /* 박스 3 박스 4의 가로 정렬 */
+/* after 정렬방식 */
+.box3 {
+  float: left;
+  width: 70%;
+}
+.box4 {
+  float: left;
+  width: 30%;
+}
+.boxA::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* flex 정렬방식 
+.boxA {display: flex;}
+.box3 {width: 70%;}
+.box4 {width: 30%;} */
+
+
+/* 박스 3과 박스4의 간격설정 */
+
+/* .box3 {
+  width:68%;
+  margin-right: 2%;
+} */
+
+.box3 {
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+/* 박스A-1 안에 내용 가로정렬 */
+
+.boxA-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boxA-1>article {
+  width:50%;
+}
+
+.boxA-1>article:nth-child(odd) {
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.boxA-1>article:nth-child(even) {
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.boxA-1 img {
+  height: 320px;
+}
+
+
+}
+
+/* summary h1 글자크기변경 */
+@media(min-width:900px){
+  .summary h1 {font-size: 22px;}
+}
+
+
+
+/* 크기 고정 구간 */
+/* 1290px 이상일 때 body의 크기값을 1280px로 고정 */
+@media(min-width:1290px){
+/* 전체사이즈 설정 */
+.box1, .boxA, .gnb, .copy {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+}
+
+
+
+
+
+

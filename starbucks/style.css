@@ -1,0 +1,355 @@
+/* 언어설정 */
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+
+/* header 설정 */
+header {
+    background-color: #f6f5ef;
+}
+header h1 {
+    background-image: url(img/_top\ logo.png);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 120px;
+    background-size: contain;
+    text-indent: -9999px;
+}
+header .util {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+}
+header .util li {}
+header .util li a {
+    display: block;
+    padding: 10px;
+}
+header .util li a:hover {
+    text-decoration: underline;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+header .gnb {
+
+}
+header .gnb ul {
+    display: flex;
+    
+}
+header .gnb ul li {
+    margin: 0 5px;
+}
+header .gnb ul li a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding: 10px 20px 30px 20px; */
+}
+
+header .gnb ul li a:hover {
+    background-color: #333;
+    color: #00b050;
+    text-decoration: underline;
+}
+
+
+/* hero 설정 */
+.hero {
+    height: 32vw;
+    background-image: url(img/2023_disney2_top_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* hero drink position */
+.hero_inner {
+    position: relative;
+    height: 100%;
+}
+.hero_inner>div {
+    position: absolute;
+}
+
+.hero_inner>div:nth-child(1) {
+    left: 0;
+    top: 50%;
+    margin-top: -100px;
+    
+}
+.hero_inner>div:nth-child(2) {
+    left: 180px;
+    bottom: 50%;
+    margin-bottom: -120px;
+    border: 2px solid #401b0d;
+    border-radius: 5px;
+    padding: 10px 30px; 
+    color: #401b0d;
+    font-size: 14px;}
+.hero_inner>div:nth-child(3) {
+    top:0;
+    left: 50%;
+    margin-left: -120px;
+    margin-top: 80px;
+}
+.hero_inner>div:nth-child(4) {
+    bottom: 0;
+    left: 50%;
+    margin-left: 300px;
+    margin-bottom: 80px;
+    z-index: 10;
+}
+.hero_inner>div:nth-child(5) {
+    top: 0;
+    left: 50%;
+    margin-left: 150px;
+    margin-top: 100px;
+    z-index: 0;
+}
+
+
+/* notice 설정 */
+.notice {
+    display: flex;}
+.notice>div {
+    width: 50%;
+}
+/* notice 바로 아래 자손자를 선택하고 있는 다이렉트로 notice001과 notice002만 부른다. */
+.notice>div h2 {
+    font-weight: normal;
+    font-size: 28px;
+    width: 40%;
+}
+.notice>div:nth-child(1) h2 {
+    font-weight: normal;
+    font-size: 28px;
+    color: #fff;
+}
+.notice>div ul {
+    height: 26px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.notice>div ul li {
+    margin-bottom: 10px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition: all 0.8s;
+}
+.notice>div ul li:nth-child(1) {
+    top: 0;
+}
+.notice>div ul li a {
+    color: #fff;
+    display: block;
+
+}
+.notice>div p {}
+.notice>div img {}
+
+/* 테스트
+.notice>div ul:hover li {
+    top: 0;
+} */
+
+
+/* notice 상세 설정 */
+.notice001 {
+    background-color: #333;
+    display: flex;
+    justify-content: end;
+}
+.notice002 {
+    background-color: #f6f5ef;
+}
+
+.notice>div>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* banner 설정 */
+.banner {
+    background-color: #1e3932;
+    padding: 20px 0;
+}
+.banner_inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.banner .logo_banner {
+    width: 300px;
+}
+.banner .logo_banner img {
+    width: 80%;
+}
+.banner .txtBox {
+    background-color: rgb(44, 76, 104);
+    width: calc(100% - 300px);
+}
+
+/* banner 상세 설정 */
+.banner .boxTop {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.banner .boxTop .btn {
+    display: flex;
+}
+
+.banner .boxTop .btn p {
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.banner .boxTop .btn p:nth-child(1) {
+    border: none;
+    background-color: #155c34
+}
+
+.banner .boxTop .txt {}
+.banner .boxTop .txt p {
+    color: #fff;
+}
+.banner .boxTop .txt p:nth-child(1) {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.banner .boxTop .txt strong {}
+
+.banner .boxBottom {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.banner .boxBottom .btn {
+    display: flex;
+}
+.banner .boxBottom .btn p {
+    color: #fff
+    ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner .boxBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리 구간 ---------------------------------------- */
+
+/* 1290px 이상일 때 */
+@media(min-width:1290px) {
+    .header_inner, .hero_inner, .banner_inner {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    .notice_inner001 {
+        width: 640px;
+    }
+
+    .notice_inner002 {
+        width: 640px;
+    }
+}

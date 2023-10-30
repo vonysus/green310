@@ -102,7 +102,6 @@ header .gnb ul li a:hover {
     left: 0;
     top: 50%;
     margin-top: -100px;
-    
 }
 .hero_inner>div:nth-child(2) {
     left: 180px;
@@ -205,6 +204,7 @@ header .gnb ul li a:hover {
 .banner {
     background-color: #1e3932;
     padding: 20px 0;
+    color: #fff;
 }
 .banner_inner {
     display: flex;
@@ -218,7 +218,6 @@ header .gnb ul li a:hover {
     width: 80%;
 }
 .banner .txtBox {
-    background-color: rgb(44, 76, 104);
     width: calc(100% - 300px);
 }
 
@@ -246,7 +245,7 @@ header .gnb ul li a:hover {
 }
 
 .banner .boxTop .btn p:nth-child(1) {
-    border: none;
+    border: 2px solid #155c34;
     background-color: #155c34
 }
 
@@ -261,6 +260,11 @@ header .gnb ul li a:hover {
 .banner .boxTop .txt strong {}
 
 .banner .boxBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.banner .boxBottom {
     padding: 10px 0;
     margin-bottom: 10px;
     display: flex;
@@ -271,66 +275,274 @@ header .gnb ul li a:hover {
     display: flex;
 }
 .banner .boxBottom .btn p {
-    color: #fff
-    ;
+    color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.banner .boxBottom {
+/* promotion 설정 */
+.promotion {
+    height: 43vh;
+    background-image: url(img/2023_autumn_promotion_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+}
+.promotion>div {
+    width: 50%;
+    height: 100%;
+}
+.promotion .imgBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.promotion .imgBox img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.promotion .txtBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    align-items: flex-start;
+}
+.promotion .txtBox img {
+    width: 100%;
+    max-width: 300px;
+}
+.promotion .txtBox p {
+    border: 2px solid #155c34;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 50px;
+    color: #155c34;
+}
+
+/* reserve 설정 */
+.reserve {
+    height: 400px;
+    background-image: url(img/230811_pc_reserve_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row-reverse;
+}
+.reserve>div {
+    width: 50%;
+    height: 100%;
+}
+.reserve .imgBox {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 150px;
+    align-items: center;
+}
+.reserve .imgBox img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.reserve .txtBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: flex-end;
+    
+}
+.reserve .txtBox img {
+    width: 100%;
+    max-width: 300px;
+}
+.reserve .txtBox p {
+    border: 2px solid #cd9757;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 50px;
+    color: #cd9757;
+    margin-right: 80px;
+}
+
+
+/* pick 설정 */
+.pick {
+    height: 700px;
+    background-image: url(img/230921_1_pc_pick_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    background-position: center center;
+}
+.pick>div {
+    width: 50%;
+    height: 100%;
+}
+.pick .imgBox {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 80px;
+    align-items: center;
+}
+.pick .imgBox img {
+    width: 100%;
+    max-width: 900px;
+}
+
+.pick .txtBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.pick .txtBox img:nth-child(1) {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.pick .txtBox img:nth-child(2) {
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 20px;
+}
+
+.pick .txtBox p {
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+/* magazine 설정 */
+.magazine {
+    height: 400px;
+    background-image: url(img/reserve_bg_pc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.magazine>div {
+    width: 50%;
+    position: absolute;
+}
+.magazine .imgBox {
+    left: 50%;
+    margin-left: +40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.magazine .imgBox img {
+    width: 100%;
+    max-width: 340px;
+}
+
+.magazine .txtBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    top: 30%;
+    left: 10%;
+    
+}
+.magazine .txtBox img {
+    width: 100%;
+    max-width: 580px;
+}
+.magazine .txtBox p {
+    border: 2px solid #000;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 50px;
+    color:#000;
+    align-self: center;
+}
+
+/* map 설정 */
+.map {
+    height: 400px;
+    background-image: url(img/store_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.map>div {
+    width: 50%;
+    height: 100%;
+}
+.map .imgBox {
+    position: relative;
+}
+.map .imgBox img {
+    position: absolute;
+    width: 100%;
+}
+.map .imgBox img:nth-child(1) {
+    top: 0;
+    max-width: 360px;
+    right: 50%;
+    transform: translateX(70%);
+}
+.map .imgBox img:nth-child(2) {
+    top: 50%;
+    max-width: 220px;
+    right: 50%;
+    transform: translate(150%, -20%);
 }
 
 
 
+.map .txtBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    align-items: flex-start;
+}
+.map .txtBox img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.map .txtBox p {
+    
+    margin-top: 50px;
+    color: #155c34;
+}
+.map .txtBox p:nth-child(1) {
+    font-size: 28px;
+}
+.map .txtBox p:nth-child(1) strong {
+    display: block;
+}
+.map .txtBox p.more {
+    border: 2px solid #155c34;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer {
+    background-color: #333;
+    height: 600px;
+}
 
 
 

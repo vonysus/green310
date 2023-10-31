@@ -1,0 +1,240 @@
+/* 언어설정 */
+
+@charset 'UTF-8';
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* vid 설정 */
+.vid {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.vid video {
+    width: 100%;
+    min-width: 2000px;
+}
+
+
+/* header 설정 */
+header {
+    width: 700px;
+    height: 100%;
+    position: fixed;
+    background: linear-gradient(-45deg, #e6fc55, #b9fb05, #97e031);
+    transform: skewX(-40deg);
+    left: -420px;
+    top: 0;
+}
+
+/* sns 설정 */
+
+.sns {
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    background-color: aqua;
+    right: 50px;
+    top: 50px;
+}
+
+/* txtBox설정 */
+.txtBox {
+    width: 340px;
+    height: 280px;
+    position: fixed;
+    background-color: beige;
+    right: 0;
+    top: 50%;
+    margin-top: -140px;
+}
+
+/* slide 설정 */
+.slide {
+    width: 800px;
+    height: 100%;
+    position: fixed;
+    background-color: #111;
+    opacity: 0.5;
+    right: -800px;
+    bottom: 0;
+    transform: skewX(-40deg);
+    transition: all 0.5s;
+}
+
+.slide:hover {
+    right: -500px;
+}
+
+.slide .con {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    left: 250px;
+    bottom: 0;
+    box-sizing: border-box;
+    transition: all 0.8s;
+}
+.slide:hover .con {
+    left: 50px;
+}
+
+.slide .con p {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 150px;
+}
+.slide .con p:nth-child(1) {
+    bottom: 270px;
+    transition: all 1.5s;
+}
+.slide .con p:nth-child(2) {
+    bottom: 160px;
+    transition: all 1.2s;
+}
+.slide .con p:nth-child(3) {
+    bottom: 50px;
+    transition: all 1s;
+}
+.slide:hover .con p {
+    left: 50px;
+}
+
+.slide .con p em {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #a0bd50;
+    transform: skewX(40deg);
+}
+.slide .con p a {}
+.slide .con p img {}
+
+.slide .btn {
+    position: absolute;
+    bottom: 40px;
+    left: 150px;
+    color: #b9fb05;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    transition: all 0.3s;
+}
+
+.slide:hover .btn {
+    left: -1500px;
+    opacity: 0;
+}
+
+.slide .btn p {
+    font-size: 70px;
+    transform: skewX(40deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 0.8;
+}
+
+.slide .btn p:nth-child(1) {animation: ani linear 1.5s 0s infinite;}
+.slide .btn p:nth-child(2) {animation: ani linear 1.5s 1s infinite;}
+.slide .btn p:nth-child(3) {animation: ani linear 1.5s 2s infinite;}
+
+/* gnb 설정 */
+.gnb {
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+.gnb li {
+
+}
+.gnb li a {
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    text-align: right;
+    padding-right: 40px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.gnb>li:nth-child(1) a {
+    background-color: #111;
+    color: #fff;
+}
+.gnb li a:hover {
+    background-color: #111;
+    color: #fff;
+}
+.gnb li em {
+    transform: skewX(40deg);
+}
+
+/* 2뎁스 설정 */
+.gnb > li {
+    position: relative;
+}
+.gnb ul {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    transition: all 0.4s;
+    opacity: 0;
+}
+.gnb ul li a {
+    display: block;
+    width: 150px;
+    background-color: #222;
+    color: #fff;
+    border-bottom: 1px solid #b9fb05;
+    line-height: 2;
+    box-sizing: border-box;
+    height: 40px;
+}
+.gnb ul li em {
+    display: inline-block;
+}
+
+.gnb > li:nth-child(1) ul {
+    opacity: 0.8;
+    left: 205px;
+    top: -10px;
+}
+.gnb > li:hover ul {
+    opacity: 0.8;
+    left: 205px;
+}
+
+/* 애니메이션 설정 */
+@keyframes ani {
+    0% {left: 0;}
+    100% {
+        left: -100px;
+        opacity: 0;
+        font-size: 90px;
+        line-height: 0.7;
+    }
+}
+

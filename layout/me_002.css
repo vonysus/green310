@@ -1,0 +1,413 @@
+/* 언어 설정 */
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* 미디어쿼리 구간------------------------------------------------------
+
+
+/* 768px 이상 구간 */
+@media(min-width:768px) {
+
+    /* box1 설정 */
+
+    .box1 {
+        background-color: #ffd6e1;
+        height: 80px;
+    }
+    .box1-inner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .box1-inner .logo {
+        width: 10%;
+        font-size: 40px;
+    }
+
+    .box1-1 {
+        width: 60%;
+    }
+    .box1-1 ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .box1-2 {
+        width: 20%;
+    }
+    .box1-2 ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .box1-2 ul li {
+        margin-left: 40px;
+    }
+
+    .box1-inner a {
+        padding: 20px 40px;
+    }
+    .box1-inner ul li:hover a {
+        font-weight: 600;
+    }
+
+    /* box2 설정 */
+    .box2 {
+        width: 100%;
+        height: 60vh;
+        /* background-color: #eee; */
+    }
+    .box2-inner {
+        position: relative;
+        height: 100%;
+    }
+    .box2-1 {
+        /* background-color: #ffb6ca; */
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 20%;
+    }
+    .box2-1 .title {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+    .box2-1 .txt {
+        font-size: 16px;
+        width: 80%;
+    }
+    .box2-2 {
+        background-image: url(https://cdn.newsquest.co.kr/news/photo/202302/203423_94244_252.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent: -9999px;
+        position: absolute;
+        width: 50%;
+        right: 0;
+        height: 100%;
+    }
+    .box2-3 {
+        /* background-color: #7b7b7b; */
+        position: absolute;
+        width: 50%;
+        bottom: 20%;
+        height: 10%;
+    }
+    .box2-3 .btn {
+        padding: 20px 60px;
+        background-color: #ff85a6;
+        width: 110px;
+        border-radius: 100px;
+        transition: all 0.4s;
+        cursor: pointer;
+    }
+    .box2-3 .btn:hover {
+        transform: translateY(-8px);
+        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    /* box3 설정 */
+    .box3 {
+        background-color: #f6f6f6;
+        background-image: url(https://image-optimizer-kr.production.sephora-asia.net/images/billboard_images/web_0308_1__14bc4b3b6a224268466a221f6eac6c9a4aee3c28_1647837181061.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 300px;
+    }
+    .box3-inner {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .box3-inner>div {
+        width: 50%;
+    }
+    .box3 .article {
+        margin: auto 0;
+    }
+    .box3 p:nth-child(1) {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+
+    /* box4 설정 */
+    .box4 {
+        /* background-color: #ffd6e1; */
+    }
+    .box4-inner {
+        text-align: center;
+        /* height: 600px */
+    }
+    .box4-inner h2 {
+        font-size: 48px;
+        font-weight: 600;
+        padding-top: 80px;
+    }
+    .box4-inner ul {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        height: 100%;
+        padding: 80px;
+    }
+    .box4-inner li {
+        width: 30%;
+        /* background-color: rgba(255, 255, 255, 0.5); */
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    .box4-inner i {
+        display: block;
+        font-size: 56px;
+        padding-bottom: 40px;
+    }
+
+
+    /* box5 설정 */
+    .box5 {
+        background-color: #ffeff4;
+        padding: 80px 0;
+    }
+    .box5-inner {
+        height: 100%;
+        text-align: center;
+    }
+    .box5-inner h2 {
+        padding-bottom: 40px;
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .box5-inner .prod {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: flex-end;
+    }
+    .box5-inner .prod>div {
+        width: 30%;
+        height: 100%;
+    }
+
+    .box5-inner .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .box5-inner p {
+        margin-top: 12px;
+        margin-bottom: 24px;
+    }
+
+    .box5-inner .btn {
+        padding: 8px 16px;
+        border: 1px solid #ff517f;
+        border-radius: 4px;
+        width: 10%;
+        margin: 0 auto;
+        cursor: pointer;
+        color: #ff517f;
+    }
+
+    .box5-inner .btn:hover {
+        background-color: #ff517f;
+        color: #fff;
+    }
+
+
+    /* box6 설정 */
+    .box6 {
+        background-color: #707070;
+        padding: 80px 0;
+    }
+    .box6-inner {
+        text-align: center;
+        
+    }
+    .box6-inner>h2 {
+        padding-bottom: 40px;
+    }
+    .box6-inner>div {
+        height: 300px;
+        margin-bottom: 40px;
+    }
+    .box6-inner .imgBox {
+        background-color: #eee;
+    }
+    .box6-1 {
+        display: flex;
+    }
+    .box6-1>div {
+        width: 50%;
+    }
+
+    .box6-2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .box6-2>div {
+        width: 50%;
+    }
+
+    .box6-3 {
+        display: flex;
+    }
+    .box6-3>div {
+        width: 50%;
+    }
+
+    /* box7 설정 */
+    .box7 {
+        height: 300px;
+        background-color: #eee;
+    }
+    .box7-inner {
+        height: 100%;
+        text-align: center;
+        
+    }
+    .box7-inner .txtBox {
+        margin: auto 0;
+        height: 100%;background-color: #ff517f;
+    }
+
+    /* box8 설정 */
+    .box8 {
+        height: 600px;
+        padding: 80px 0;
+        background-color: #ffd6e1;
+    }
+    .box8-inner {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .box8-inner h2 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    .box8-inner .container {
+        width: 100%;
+        height: 100%;
+    }
+    .box8-inner .container ul {
+        position: relative;
+        height: 100%;
+    }
+    .box8-inner .container ul li {
+        position: absolute;
+        background-color: #ffb6ca;
+        width: 360px;
+        height: 90%;
+    }
+    .box8-inner .container ul li:nth-child(1) {
+        background-color: #ff85a6;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .box8-inner .container ul li:nth-child(2) {
+        background-color: #ff517f;
+        top: 0;
+        right: 0%;
+    }
+
+    .box8-inner .left {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 80px;
+        height: 80px;
+        background-color: #bebebe;
+    }
+    .box8-inner .right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 80px;
+        height: 80px;
+        background-color: #bebebe;
+    }
+
+    /* box9 설정 */
+    .box9 {
+        background-color: #eee;
+        padding: 80px 0;
+    }
+    .box9-inner {
+        display: flex;
+    }
+    .box9-1 {
+        width: 30%;
+    }
+    .box9-2 {
+        width: 70%;
+        height: 400px;
+        background-color: #ffb6ca;
+    }
+
+    /* box10 설정 */
+    .box10 {
+        background-color: #e97896;
+        padding: 80px 0;
+    }
+    .box10-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .box10-inner .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .box10-1 {
+        width: 50%;
+    }
+    .box10-2 {
+        width: 50%;
+    }
+    .box10-2>p {
+        text-align: right;
+    }
+    .box10-2 ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .box10-2 ul li {
+        margin: 0 20px;
+    }
+    .box10-2 ul li:nth-child(3) {
+        margin-right: 0;
+    }
+    .box10-2 ul li a {
+        display: block;
+        cursor: pointer;
+    }
+
+
+}

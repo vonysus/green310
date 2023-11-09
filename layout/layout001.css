@@ -1,0 +1,229 @@
+/* 언어 설정 */
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+
+
+/* box1 설정 */
+.box1 {
+    display: flex;
+    background-color: #e4d9ff;
+    padding: 20px;
+}
+.box1>div:nth-child(1) {
+    width: 60%;
+}
+.box1>div:nth-child(2) {
+    width: 40%;
+}
+
+.box1 .logo {}
+
+.box1 .menu {}
+
+.box1 .menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+.box1 .menu li {}
+
+/* box2 설정 */
+.box2 {
+    height: 90vh;
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+.box2 .title {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 300px;
+}   
+
+.box2>p {
+    margin: 40px;
+    padding: 0 120px;
+}
+
+.box2 .btn {
+    border: 1px solid #8352ff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* box3 설정 */
+.box3 {
+    height: 400px;
+    background-color: #f5f0ff;
+    text-align: center;
+}
+.box3 .txtBox {
+    margin: 0 auto;
+    height: 100%;
+}
+.box3 .title {
+    font-size: 80px;
+    font-weight: bold;
+    padding: 80px;
+}
+
+.box3 p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* box4 설정 */
+.box4 {
+    display: flex;
+    background-color: #eee;
+    height: 400px;
+}
+
+.box4>div {
+    width: 50%;
+    padding: 20px;
+}
+
+.box4 .txtBox {
+    padding: 20px;
+    margin-right: 40px;
+}
+.box4 .txtBox .title {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 80px;
+}
+.box4 .txtBox>p {
+    margin-top: 20px;
+}
+
+.box4 .imgBox {
+    background-color: #b69aff;
+}
+
+/* box5 설정 */
+.box5 {
+    background-color: #f5f0ff;
+}
+.box5_innerBox {
+    display: flex;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+.box5>div>div {
+    width: 33.3333%;
+    
+}
+.box5 .imgBox {
+    height: 300px;
+    background-color: #b69aff;
+    margin-right: 16px;
+}
+.box5 .box5-3>.imgBox {
+    margin-right: 0;
+}
+.box5 p {
+    text-align: center;
+    margin-top: 12px;
+}
+
+/* box6 설정 */
+.box6 {
+    height: 400px;
+    background-color: #cfcfcf;
+    text-align: center;
+    padding: 40px;
+}
+
+.box6 .txtBox {
+    background-color: #fff;
+    margin: 0 auto;
+    height: 100%;
+}
+.box6 .title {
+    font-size: 80px;
+    font-weight: bold;
+    padding: 80px;
+}
+.box6 .txtBox p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* box7 설정 */
+.box7 {
+    height: 400px;
+    background-color: #f5f0ff;
+    text-align: center;
+}
+.box7 .txtBox {
+    margin: 0 auto;
+    height: 100%;
+}
+.box7 .title {
+    font-size: 80px;
+    font-weight: bold;
+    padding: 80px;
+}
+.box7 .txtBox p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* box8 설정 */
+.box8 {
+    background-color: #333;
+    color: white;
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+}
+.box8>div {
+    margin: auto;
+}
+.box8 ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.box8 .logo {
+    font-size: 48px;
+}
+.box8 a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+}

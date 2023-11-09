@@ -1,0 +1,260 @@
+/* 언어 설정 */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+div {
+    overflow: hidden;
+}
+
+h2 {
+    color: #9c7f27;
+}
+
+
+/* box1 설정 (header) */
+.box1 {
+    background-image: url(https://cdn.pixabay.com/photo/2023/06/24/09/17/stone-age-8084898_1280.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box1-1 {
+
+}
+.navi {
+    display: flex;
+    background-color: rgb(255, 244, 233);
+    justify-content: center;
+}
+.navi li {}
+.navi a {
+    display: block;
+    padding: 10px;
+    
+}
+div.box1-2 {
+    text-align: center;
+    font-size: 72px;
+    line-height: 1.2;
+    font-family: 'Diphylleia', serif;
+    padding-top: 100px;
+    box-sizing: border-box;
+    color: #fffae6;
+    overflow: visible;
+}
+.box1-2 p {
+    animation: ani 10s linear infinite alternate;
+}
+
+/* 애니메이션 설정 */
+@keyframes ani {
+    0% {}
+    100% {transform: scale(1.5);}
+}
+
+/* box2 설정 */
+.box2 {
+    display: flex;
+    height: 50vh;
+}
+.box2>div {
+    width: 50%;
+    box-sizing: border-box;
+    /* 벤더픽스 설정 */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.box2-1 {
+    padding: 30px 20px;
+}
+.box2-1 h2 {
+    margin-bottom: 20px;
+}
+.box2-1 p {
+    width: 60%;
+    color: #565241;
+}
+
+.box2-2 {
+    height: 100%;
+    background-color: #efe8d4;
+    background-image: url(img/sunsa_01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+}
+
+/* box3 설정 */
+.box3 {
+    padding: 20px;
+    background-image: url(https://img.freepik.com/free-vector/primal-tribe-people-banners-set_1284-19120.jpg?w=2000&t=st=1698973499~exp=1698974099~hmac=843a4ace9b1a973a3c3d703552d9f674a9fec53d224d9aa1df67cbf2965b38d5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box3_inner {
+    width: 70%;
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #Fff;
+}
+.box3 h2 {
+    margin-bottom: 10px;
+font-size: 40px;}
+.box3 p {
+    margin-bottom: 50px;
+}
+.box3>div {}
+
+/* box4 설정 */
+.box4 {
+    display: flex;
+    height: 300px;
+}
+
+.box4 .box4-1 {
+    width: 40%;
+}
+.box4 .box4-2 {
+    width: 60%;
+}
+
+.box4 img {
+    transform: translateY(-50px);
+    width: 100%;
+}
+
+.box4>div {
+    box-sizing: border-box;
+    /* 벤더픽스 설정 */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.box4-1 {
+    height: 100%;
+    background-color: #aaa;
+}
+
+.box4-2 {
+    padding: 30px 20px;
+}
+.box4-2 h2 {
+    margin-bottom: 20px;
+}
+.box4-2 p {
+    width: 60%;
+}
+
+
+/* box5 설정 */
+.box5 {
+    padding: 30px 20px 30px 80px;
+    background-image: url(https://www.ccnewsline.co.kr/news/photo/201704/38158_29028_4246.JPG);
+    background-position: right center;
+    background-size: cover;
+    height: 300px;
+    box-sizing: border-box;
+}
+.box5 h2 {margin-bottom: 10px;}
+.box5 p {
+    margin-bottom: 50px;
+}
+.box5-1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.box5>div {}
+
+/* box6 설정 */
+.box6 {
+    display: flex;
+    height: 250px;
+}
+
+.box6 .box6-1 {
+    width: 60%;
+}
+.box6 .box6-2 {
+    width: 40%;
+}
+.box6-2 iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.box6>div {
+    box-sizing: border-box;
+    /* 벤더픽스 설정 */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.box6-1 {
+    padding: 30px 20px;
+}
+.box6-1 h2 {
+    margin-bottom: 20px;
+}
+.box6-1 p {
+    width: 60%;
+}
+
+.box6-2 {
+    height: 100%;
+    background-color: #aaa;
+}
+
+/* box7 설정 */
+.box7 {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+.box7-1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box7-1 h2 {
+    margin-bottom: 10px;
+}
+.box7-1>div {}
+
+.box7-2 {}
+.box7-2>ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.box7-2>ul>li {}
+.box7-2>ul>li>a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+}

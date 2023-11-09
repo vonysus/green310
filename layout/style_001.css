@@ -1,0 +1,331 @@
+/* 언어 설정 */
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+
+
+/* box1 설정 */
+header {
+    background-color: #7AB551;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 0px 5px rgba(0, 0, 3, 0.5);
+}
+.box1 {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.box1>div:nth-child(1) {
+    width: 70%;
+}
+.box1>div:nth-child(2) {
+    width: 30%;
+}
+
+.box1 .logo {}
+.box1 .logo h1 {
+    max-width: 300px;
+    height: 50px;
+    background-image: url(img/layout001/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+.box1 .menu {}
+
+.box1 .menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+.box1 .menu li {
+    /* background-color: red; */
+    /* padding: 20px; */
+}
+.box1 .menu li a {
+    padding: 1px 0px;
+    color: #fff;
+}
+.box1 .menu li:hover a {
+    border-bottom: 1px solid #fff;
+}
+
+/* box2 설정 */
+.box2 {
+    height: 90vh;
+    background-image: url(https://cdn.pixabay.com/photo/2016/01/02/02/03/orange-1117645_1280.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20px;
+}
+
+.box2 .title {
+    background-image: url(img/layout001/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 8%;
+    margin: 0 auto;
+    text-indent: -9999px;
+    margin-top: 20%;
+    filter: drop-shadow(5px 5px 5px  rgba(0, 0, 3, 0.15)); 
+}   
+
+.box2>p {
+    margin: 40px;
+    padding: 0 120px;
+    color: #fff;
+}
+
+.box2 .btn {
+    border: 1px solid #FE7E03;
+    background-color: #FE7E03;
+    padding: 16px 28px;
+    border-radius: 4px;
+    width: 100px;
+    margin: 0 auto;
+    color: #fff;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.box2 .btn:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* box3 설정 */
+.box3 {
+    height: 400px;
+    background-color: #ffcb9b;
+    text-align: center;
+}
+.box3 .txtBox {
+    margin: 0 auto;
+    height: 100%;
+}
+.box3 .title {
+    font-size: 80px;
+    font-weight: bold;
+    padding: 80px;
+}
+
+.box3 p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* box4 설정 */
+.box4 {
+    display: flex;
+    background-color: #fff;
+    height: 400px;
+}
+
+.box4>div {
+    width: 50%;
+}
+
+.box4 .txtBox {
+    padding: 0 60px;
+}
+.box4 .txtBox .title {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 80px;
+}
+.box4 .txtBox>p {
+    margin-top: 20px;
+}
+.box4 .imgBox {
+    overflow: hidden;
+}
+.box4 .imgBox img {
+    width: 100%;
+    transform: translateY(-20%);
+}
+
+/* box5 설정 */
+.box5 {
+    background-color: #e9f2e3;
+}
+.box5_innerBox {
+    display: flex;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+.box5>div>div {
+    width: 33.3333%;
+    
+}
+.box5 .imgBox {
+    height: 300px;
+    margin-right: 16px;
+    overflow: hidden;
+}
+.box5 .imgBox img {
+    height: 100%;
+    transform: translateX(-5%);
+}
+.box5 .box5-3>.imgBox {
+    margin-right: 0;
+}
+.box5 p {
+    text-align: center;
+    margin-top: 12px;
+}
+
+/* box6 설정 */
+.box6 {
+    height: 400px;
+    background-image: url(img/layout001/bg.png);
+    background-size: cover;
+    text-align: center;
+    padding: 40px;
+}
+
+.box6 .txtBox {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0 auto;
+    height: 100%;
+}
+.box6 .title {
+    font-size: 80px;
+    font-weight: bold;
+    padding: 80px;
+}
+.box6 .txtBox p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* box7 설정 */
+.box7 {
+    height: 500px;
+    background-image: url(img/layout001/experience_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.box7 .txtBox {
+    width: 80%;
+    margin: 0 auto;
+    height: 70%;
+}
+.box7 .title {
+    padding: 80px 0 40px 0;
+    font-size: 80px;
+    font-weight: bold;
+}
+.box7 .txtBox p {
+    width: 80%;
+}
+
+.box7 .imgBox {
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+
+.box7 .imgBox {
+    /* position: absolute; */
+    animation: ani 20s linear infinite alternate;
+    
+}
+.box7 .imgBox img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: spin linear 2s infinite;
+}
+
+/* 애니메이션 설정 */
+@keyframes ani {
+    0% {left: 0;}
+    100% {left: 100%;}
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+/* box8 설정 */
+.box8 {
+    background-color: #476c2d;
+    color: white;
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+}
+.box8>div {
+    margin: auto;
+}
+.box8 ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.box8 .logo {
+    width: 200px;
+    height: 50px;
+    background-image: url(img/layout001/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+
+}
+.box8 a {
+    color: #fff;
+    display: block;
+    padding: 1px 0px;
+    margin: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.box8 a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+
+/* 미디어쿼리---------------------------------------------------------------- */
+@media (min-width:1290px) {
+    .box1 {
+        width: 1290px;
+        margin: 0 auto;
+    }
+}

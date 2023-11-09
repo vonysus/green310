@@ -1,0 +1,169 @@
+/* 언어 설정 */
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* box1 설정 */
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e5ddff;
+    align-items: flex-end;
+}
+.box1-1 {
+    width: 120px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1-2 {}
+.box1-2 ul {
+    display: flex;
+}
+.box1-2 li {}
+.box1-2 a {
+    display: block;
+    padding: 10px 20px;
+}
+.box1-2 a:hover {
+    background-color: #ffddf1;
+}
+
+/* box2 설정 */
+.box2 {
+    background-color: #eee;
+    text-align: center;
+    font-size: 120px;
+    height: 60vh;
+}
+
+/* box3 설정 */
+.box3 {
+    background-color: #e5ddff;
+}
+.box3_inner {
+    text-align: center;
+}
+.box3_inner p {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* box4 설정 */
+.box4 {
+    height: 350px;
+}
+.box4_inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.box4_inner>article {
+    width: 50%;
+    height: 100%;
+}
+.box4-1 {
+    position: relative;
+}
+.box4-1 p {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #eee;
+    right: 0;
+    bottom: 25px;
+}
+
+/* box5 설정 */
+.box5 {}
+.box5_inner {
+    display: flex;
+    justify-content: space-between;
+}
+.box5_inner article {
+    width: 30%;
+    background-color: #e5ddff;
+}
+.box5_inner p {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    margin: 0 auto;
+    text-align: center
+}
+
+/* box6 설정 */
+.box6 {
+    background-color: #cbbbff;
+}
+.box6 {
+    text-align: center;
+}
+.box6 p {
+    text-align: center;
+    padding: 20px;
+    padding: 40px 20px;
+}
+
+/* box7 설정 */
+.box7 {
+    background-color: #b6a0ff;
+}
+.box7 {
+    text-align: center;
+}
+.box7 p {
+    text-align: center;
+    padding: 20px;
+    padding: 40px 20px;
+}
+
+/* box8 설정 */
+.box8 {}
+.box8_inner {
+    display: flex;
+    justify-content: space-between;
+}
+.box8_inner>div {
+    width: 20%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* 미디어 쿼리 구간 ---------------------------------------------------------------*/
+/* 1290px 이상일 때 구간 설정 */
+@media(min-width:1290px) {
+    
+    /* body 고정값 1280px로 고정 */
+
+    .box3_inner, .box4_inner, .box5_inner, .box8_inner {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+
+
+
+
+}

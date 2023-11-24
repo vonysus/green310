@@ -1,0 +1,331 @@
+/* 언어설정 */
+@charset"UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* font-family: 'Abril Fatface', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+/* font-family: 'Quattrocento', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+/* font-family: 'Nanum Myeongjo', serif; */
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* 전체 여백 설정 */
+.box3, .box4, .box5 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* box1 설정 */
+.box1 {
+    background-color: #292a46;
+}
+.box1-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.logo {
+    width: 20%;
+    background-image: url(img/layout004/logo.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    background-size: contain;
+    text-indent: -9999px;
+    padding: 20px;
+}
+
+.box1 .nav {
+    width: 70%;
+}
+.box1 .nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.box1 .nav li  {
+    margin-right: 80px;
+}
+.box1 .nav a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.box1 .util {
+    width: 10%;
+}
+
+.box1 .util a {
+    padding: 8px 40px;
+    background-color: #fff;
+    color: #292a46;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+/* box2 설정 */
+.box2 {
+    background-color: #fff;
+    height: 80vh;
+}
+.box2-inner {
+    height: 100%;
+}
+.box2-inner .hero {
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.hero>div{
+    width: 50%;
+}
+
+.hero .txtBox {
+    margin: auto 0;
+}
+.hero .txtBox .subtitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+.hero .txtBox .title {
+    font-size: 80px;
+    font-weight: 600;
+    color: #292a46;
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 1;
+    letter-spacing: 3px;
+    margin-bottom: 80px;
+}
+.hero .txtBox .btn {
+    background-color: #525371;
+    display: inline-block;
+    color: #fff;
+    padding: 16px 60px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.hero .txtBox .btn:hover {
+    background-color: #292a46;
+}
+
+.hero .imgBox {
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero .imgBox img {
+    height: 100%;
+    transform: translateX(-10%);margin: auto 0;
+    text-align: center;
+    scale: 1.2;
+    transform: translateX(-400px);
+}
+
+/* box3 설정 */
+.box3 {
+    background-color: #292a46;
+}
+
+.box3-inner .titleBox {
+    text-align: center;
+    
+}
+.box3-inner .titleBox strong {
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #fff;
+    margin-bottom: 20px;
+    display: block;
+}
+.box3-inner .titleBox p {
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.box3-inner .listBox {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.box3-inner .listBox>div {
+    width: 32%;
+}
+
+.box3-inner .listBox img {
+    width: 100%;
+}
+.box3-inner .listBox strong {
+    margin-top: 20px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+}
+.box3-inner .listBox p {
+    margin-top: 8px;
+    color: #fff;
+}
+
+
+/* box4 설정 */
+.box4 {
+    background-color: #eee;
+    /* height: 600px; */
+}
+.box4-inner {
+    display: flex;
+    margin: auto 0;
+    height: 100%;
+}
+
+.box4-inner>div {
+    width: 50%;
+}
+
+.box4-1 .title {
+    font-size: 48px;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 60px;
+}
+.box4-1 .txt {
+    line-height: 2;
+    margin-bottom: 80px;
+}
+.box4-1 .btn {
+    display: inline-block;
+}
+.box4-1 .btn p {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.box4-2 .listBox li {
+    display: flex;
+    margin-bottom: 100px;
+}
+.box4-2 .listBox li:nth-child(3) {
+    margin-bottom: 0;
+}
+.box4-2 .listBox .icon {
+    font-size: 28px;
+    margin-right: 12px;
+}
+.box4-2 .txtBox strong {
+    margin-bottom: 12px;
+    display: block;
+    font-size: 20px;
+}
+
+/* box5 설정 */
+.box5 {
+    height: 400px;
+    background-image: url(img/layout004/box5-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.box5-inner {
+    display: flex;
+    color: #fff;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.box5-inner .titleBox {
+    width: 60%;
+}
+
+.box5-inner .titleBox .title {
+    font-size: 40px;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 12px;
+}
+.box5-inner .titleBox p {
+    font-size: 20px;
+}
+
+.box5-inner .textBox {
+    width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리---------------------------------------------------- */
+/* 1290px 이상 */
+@media(min-width:1280px) {
+    .box1-inner, .box2-inner, .box3-inner, .box4-inner, .box5-inner {
+        width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 학습용----------------------------------------------------------------------- */
+/* .img {
+    width: 1000px;
+    height: 1000px;
+    background-color: #68a760;
+    border-radius: 50% 20% 30% 40% / 40% 30% 80% 50%;
+    overflow: hidden;
+} */

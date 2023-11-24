@@ -1,0 +1,355 @@
+/* 언어 설정 */
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* logo 설정 */
+.logo {}
+.logo h1 {
+    font-size: 30px;
+}
+.logo h1 a {}
+
+/* menu 버튼 설정 */
+#btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 12px;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    cursor: pointer;
+}
+#btn i {
+    font-size: 18px;
+    color: #888;
+}
+
+#btn p {
+    text-indent: -9999px;
+    display: inline-block;
+}
+/* nav 설정 */
+.gnb {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.gnb ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.gnb ul li {
+
+}
+.gnb a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.gnb a:hover {
+    background-color: #eee;
+}
+
+/* hero 사진 설정 */
+.topImg {
+    max-width: 100%;
+}
+
+/* summary 설정 */
+
+.box6>div {
+    margin: 16px;
+}
+.summary {
+    text-align: center;
+}
+
+.summary a {
+}
+.summary i {
+    display: block;
+    padding: 48px;
+    font-size: 48px;
+    color: #fff;
+}
+.summary:nth-child(1) {
+    background-color: #bdbd13;
+}
+.summary:nth-child(2) {
+    background-color: #c58839;
+}
+.summary:nth-child(3) {
+    background-color: #859f46;
+}
+.summary h2 {
+    background-color: #222;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.summary p {
+    background-color: #524e3c;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+
+
+/* news(공지사항) 설정 */
+.news {
+    border: 5px solid #ddd;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.news h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #666;
+}
+.news ul {}
+.news ul li {}
+.news ul li a {
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+    border-bottom: dotted 2px #ddd;
+}
+.news time {
+    color: #888;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+/* snsSet 설정 */
+
+.snsSet .sns-info p {
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+.snsSet .sns-info {
+	position: relative;
+	background: #eee;
+    margin-bottom: 20px;
+}
+.snsSet .sns-info:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #eee;
+	border-width: 16px;
+	margin-left: -16px;
+}
+
+.snsSet ul {}
+.snsSet ul li {
+    background-color: #666;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+.snsSet ul li:nth-child(1) {
+    background-color: #1da1f2;
+}
+.snsSet ul li:nth-child(2) {
+    background-color: #1877f2;
+}
+.snsSet ul li:nth-child(3) {
+    background-color: #e1306c;
+}
+.snsSet ul li i {
+    font-size: 20px;
+    margin-right: 8px;
+}
+.snsSet ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+
+
+
+
+/* copyright 설정 */
+.box5 {
+    background-color: #ddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.copyright p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+
+
+/* 위아래 여백 설정 */
+.boxA {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.box4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.news {
+    margin-bottom: 10px;
+}
+
+
+/* 좌우 여백 설정 */
+.boxA, .box4, .box5 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+
+/* 미디어쿼리 구간 -------------------------------------------------*/
+
+/* 599px 이하일 때 */
+@media (max-width:599px) {}
+
+/* 767px 이하일 때 */
+@media(max-width:767px) {
+    #menu {
+        display: none;
+    }
+
+    .box2 {
+        border-top: 1px solid #000;
+        margin-top: 10px;
+    }
+
+    .gnb ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .gnb li {
+        width: 100%;
+    }
+    .gnb ul a {
+        border-bottom: 1px solid #ddd;
+    }
+
+
+}
+
+/* 768px 이상일 때 */
+@media (min-width:768px) {
+    /* 레이아웃 설정 */
+
+    /* 박스1과 박스2의 가로정렬 */
+    /* after 정렬 방식 */
+    /* .box1 {
+        float: left;
+        width: 50%;
+    }
+    .box2 {
+        float: left;
+        width: 50%;
+    }
+    .boxA::after {
+        content: "";
+        display: block;
+        clear: both;
+    } */
+
+    /* Flex 정렬 방식 */
+    .boxA {
+        display: flex;
+    }
+
+    .boxA>div {
+        width: 50%;
+    }
+
+    /* box6 설정 */
+    .box6 {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .box6>div {
+        width: 32%;
+    }
+
+    /* box4 설정 */
+    .box4 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .news {
+        width: 68%;
+        margin-right: 2%;
+        /* padding-right: 35px;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box; */
+    }
+
+    .snsSet {
+        width: 30%;
+    }
+
+    
+
+    #btn {
+        display: none;
+    }
+
+}
+
+/* 1290px 이상일 때 */
+@media (min-width:1290px) {
+    .boxA, .box3, .box4, .copyright, .box6 {
+        width: 1290px;
+        margin: 0 auto;
+    }
+}

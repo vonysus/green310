@@ -1,0 +1,263 @@
+/* 언어설정 */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+/* font-family: 'Orbitron', sans-serif; */
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+img {
+    border: none;
+    vertical-align: bottom;
+}
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* 전체 프레임 설정 */
+#wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url(img/bg_morning.jpg);
+    background-size: cover;
+}
+
+/* logo 설정 */
+#wrap h1 {
+    width: 90px;
+    height: 80px;
+    background-image: url(img/logo_b.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    position: fixed;
+    left: 60px;
+    top: 30px;
+}
+
+/* hero 설정 */
+article {
+    position: absolute;
+    left: 150px;
+    top: 50%;
+    margin-top: -100px;
+}
+
+article p {
+    font-size: 50px;
+    color: #666;
+}
+article strong {
+    color: #111;
+}
+article em {
+    font-style: normal;
+    font-size: 14px;
+    color: #333;
+}
+
+/* 모바일 구간 */
+figure {
+    width: 1226px;
+    height: 809px;
+    background-image: url(img/phone_morning.png);
+    position: absolute;
+    right: -300px;
+    top: 200px;
+}
+figure p {
+    position: absolute;
+    width: 545px;
+    height: 308px;
+    left: 135px;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #333;
+    overflow: hidden;
+}
+figure p .mcl001 {
+    width: 600px;
+    position: absolute;
+    left: -700px;
+    animation: move1 110s linear infinite;
+}
+figure p .mcl002 {
+    width: 700px;
+    position: absolute;
+    left: 0;
+    animation: move2 100s linear infinite;
+}
+
+@keyframes move1 {
+    0% {left: -700px;}
+    100% {left: 700px;}
+}
+@keyframes move2 {
+    0% {left: 0;}
+    50% {left: 800px;}
+    50.0001% {left: -800px;}
+    100% {left: 0;}
+}
+
+
+/* nav 구간 */
+nav {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav li {
+    width: 23%;
+}
+nav li a {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #111;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+    /* morining theme */
+    #wrap.morning {
+        background-image: url(img/bg_morning.jpg);
+    }
+    
+    /* logo 설정 */
+    #wrap.morning h1 {
+        background-image: url(img/logo_b.png);
+    }
+
+    .morning figure {
+        background-image: url(img/phone_morning.png);
+    }
+    .morning article p {
+        color: #666;
+    }
+    .morning article strong {
+        color: #111;
+    }
+    .morning article em {
+        color: #333;
+    }
+
+    /* afternoon theme */
+    #wrap.afternoon {
+        background-image: url(img/bg_afternoon.jpg);
+    }
+    
+    /* logo 설정 */
+    #wrap.afternoon h1 {
+        background-image: url(img/logo_w.png);
+    }
+
+    .afternoon figure {
+        background-image: url(img/phone_afternoon.png);
+    }
+    .afternoon article p {
+        color: #666;
+    }
+    .afternoon article strong {
+        color: #111;
+    }
+    .afternoon article em {
+        color: #333;
+    }
+
+    /* evening theme */
+    #wrap.evening {
+        background-image: url(img/bg_evening.jpg);
+    }
+    
+    /* logo 설정 */
+    #wrap.evening h1 {
+        background-image: url(img/logo_w.png);
+    }
+
+    .evening figure {
+        background-image: url(img/phone_evening.png);
+    }
+    .evening article p {
+        color: #444;
+    }
+    .evening article strong {
+        color: #fff;
+    }
+    .evening article em {
+        color: #333;
+    }
+
+    /* night theme */
+    #wrap.night {
+        background-image: url(img/bg_night.jpg);
+    }
+    
+    /* logo 설정 */
+    #wrap.night h1 {
+        background-image: url(img/logo_w.png);
+    }
+
+    .night figure {
+        background-image: url(img/phone_night.png);
+    }
+    .night figure p {
+        color: #fff;
+    }
+    .night article p {
+        color: #bbb;
+    }
+    .night article strong {
+        color: #fff;
+    }
+    .night article em {
+        color: #888;
+    }
+
+/* 구름 설정 */
+.cl001 {
+    position: absolute;
+    top: 0;
+    left: -1146px;
+    animation: ani1 110s linear infinite;
+}
+.cl002 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    animation: ani2 100s linear infinite;
+}
+
+@keyframes ani1 {
+    0% {left: -1146px;}
+    100% {left: 1800px;}
+}
+@keyframes ani2 {
+    0% {left: 0;}
+    50% {left: 2000px;}
+    50.0001% {left: -2000px;}
+    100%{left: 0;}
+
+}

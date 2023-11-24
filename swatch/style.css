@@ -1,0 +1,150 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* reset */
+* {margin: 0;
+padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none;
+color: #555;}
+img{border: none;
+vertical-align: bottom;}
+
+/* logo 설정 */
+h1 {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    z-index: 100;
+}
+/* gnb 설정 */
+
+.gnb {
+    position: fixed;
+    top: 50%;
+    margin-top: -120px;
+    left: 0;
+    z-index: 99;
+}
+.gnb li {
+    height: 60px;
+    width: 200px;
+    text-align: right;
+    cursor: pointer;
+    border-top: 2px solid #000;
+}
+.gnb li:hover {
+    font-weight: bold;
+}
+.gnb li:nth-child(1):hover {
+    color: #d4164c;
+    border-color: #d4164c;
+}
+.gnb li:nth-child(2):hover {
+    color: #fff;
+    border-color: #fff;
+}
+.gnb li:nth-child(3):hover {
+    color: #ffec6a;
+    border-color: #ffec6a;
+}
+.gnb li:nth-child(4):hover {
+    color: #005a89;
+    border-color: #005a89;
+}
+
+/* 자바스크립트시 변경값 */
+.gnb li.on {
+    font-weight: bold;
+}
+.gnb li:nth-child(1).on {
+    color: #d4164c;
+    border-color: #d4164c;
+}
+.gnb li:nth-child(2).on {
+    color: #fff;
+    border-color: #fff;
+}
+.gnb li:nth-child(3).on {
+    color: #ffec6a;
+    border-color: #ffec6a;
+}
+.gnb li:nth-child(4).on {
+    color: #005a89;
+    border-color: #005a89;
+}
+
+
+/* wrap설정 */
+#wrap  {
+    width: 100%;
+}
+#wrap section {
+    width: 100%;
+    height: 1400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:right center;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+#wrap section:nth-child(1) {background-image: url(img/bg1.jpg);}
+#wrap section:nth-child(2) {background-image: url(img/bg2.jpg);}
+#wrap section:nth-child(3) {background-image: url(img/bg3.jpg);}
+#wrap section:nth-child(4) {background-image: url(img/bg4.jpg);}
+
+/* box img 설정 */
+section img {
+    position: absolute;
+}
+
+/* 첫번째 box img 설정 */
+.i11 {
+    right: 20px;
+    bottom: 20px;
+}
+.i12 {
+    right: 130px;
+    bottom: -40px;
+}
+.i13 {
+    right: 60px;
+    top: 180px;
+}
+
+/* 두번째 box img 설정 */
+.i21 {
+    right: -180px;
+    bottom: -480px;
+}
+.i22 {
+    right: 130px;
+    bottom: -40px;
+}
+
+/* 세번째 box img 설정 */
+.i31 {
+    right: 180px;
+    bottom: 30px;
+}
+.i32 {
+    right: 110px;
+    bottom: -270px;
+}
+.i33 {
+    right: -70px;
+    top: -130px;
+}
+
+/* 네번째 box img 설정 */
+.i41 {
+    right: 20px;
+    bottom: -120px;
+}
+.i42 {
+    right: 0px;
+    bottom: -180px;
+}
+

@@ -1,0 +1,879 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: bottom;
+    border: none;
+}
+body, input, textarea, select, button, table {
+    font-family: Helvetica, '나눔고딕', 'Nanum Gothic', '나눔스퀘어', 'Nanum Square', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', sans-serif;
+}
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.ri-question-mark {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d7d7d7;
+    font-size: 8px;
+    color: #5f5f5f;
+    margin-left: 4px;
+}
+
+/* content 설정 */
+.content {
+    width:1020px;
+    margin: 10px auto 0;
+}
+.content .top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 39px;
+}
+/* content sns 설정 */
+.content .top .sns {
+    width: 15%;
+}
+.content .top .sns ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+}
+.content .top .sns li {
+    width: 20%;
+    height: 100%;
+}
+.content .top li a img {
+    width: 100%;
+    height: auto;
+}
+/* content breadcrumb 설정 */
+.content .breadcrumb {
+    width: 40%;
+    height: 40%;
+}
+.content .breadcrumb ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.content .breadcrumb ul li {
+    height: 100%;
+    font-size: 12px;
+    color: #8f8f8f;
+    display: flex;
+    align-items: center;
+}
+.content .breadcrumb ul li a {
+    color: #8f8f8f;
+    display: block;
+    height: 100%;
+}
+.content .breadcrumb .ri-arrow-right-s-line {
+    color: #ddd;
+}
+.content .breadcrumb .ri-arrow-drop-down-fill {
+    color: #888;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+.content .breadcrumb strong {
+    color: #5f5f5f;
+}
+
+/* box1 product 설정 */
+.product {
+    display: flex;
+}
+.product>div {
+    width: 50%;
+}
+/* product imgBox */
+.product .imgBox {
+    position: relative;
+    border: 1px solid rgba(237, 237, 237, 0.7);
+    height: auto;
+}
+.product .imgBox .best {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #4eb6dd;
+}
+.product .imgBox .best em {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 800;
+    color: #fff;
+    padding: 4px 10px;
+
+}
+.product .imgBox .main {
+    width: 510px;
+    height: 510px;
+    position: relative;
+    border: 1px solid rgba(237, 237, 237, 0.7);
+}
+.product .imgBox .main ul {
+    width: 100%;
+    height: 100%;
+}
+.product .imgBox .main ul li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.product .imgBox .main ul li.on {
+    opacity: 1;
+}
+.product .imgBox .main ul li img {
+    width: 100%;
+    height: 100%;
+}
+/* product trailer 설정 */
+.product .imgBox .trailer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.product .imgBox .trailer ul {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    padding: 15px 44px 0;
+}
+.product .imgBox .trailer ul li {
+    width: 20%;
+    height: 100%;
+    margin: 1px;
+}
+.product .imgBox .trailer ul li.on img {
+    border: 1px solid #000;
+    margin: -1px;
+}
+.product .imgBox .trailer ul li:hover img {
+    border: 1px solid #000;
+    margin: -1px;
+}
+.product .imgBox .trailer ul li img {
+    width: 40px;
+    height: 40px;
+}
+/* product score 설정 */
+.product .score {
+    position: absolute;
+    bottom: 24px;
+    left: 40px;
+}
+.product .score .score-num {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #555;
+}
+.product .score .score-num strong {
+    display: inline-block;
+    font-size: 20px;
+    color: #000;
+    vertical-align: top;
+}
+.product .score .score-num span {
+    font-size: 20px;
+}
+
+/* product txtBox 설정 */
+.product .txtBox {
+    border: 1px solid rgba(237, 237, 237, 0.7);
+}
+.product .txtBox-inner {
+    padding: 30px 39px 30px 40px;
+}
+.product .txtBox-inner h1 {
+    display: inline;
+    font-size: 18px;
+    color: #222;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.product .txtBox-inner .txtBox1 {
+    position: relative;
+    margin-top: 15px;
+    line-height: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+.product .txtBox-inner .txtBox1 .percent {
+    font-size: 24px;
+    color: #888;
+    width: 50%;
+}
+.product .txtBox-inner .txtBox1 .sale {
+    font-size: 16px;
+    color: #8f8f8f;
+    font-weight: bold;
+    font-family: tahoma,helvetica,"\B098\B214\ACE0\B515","Nanum Gothic","\B098\B214\C2A4\D018\C5B4","Nanum Square","Apple SD Gothic Neo","Malgun Gothic","\B9D1\C740 \ACE0\B515",dotum,"\B3CB\C6C0",sans-serif;
+}
+.product .txtBox-inner .txtBox1 .sale strong {
+    text-decoration: line-through;
+}
+.product .txtBox-inner .txtBox1 .sale span {
+    font-size: 12px;
+    color: #a6a6a6;
+    text-decoration: line-through;
+}
+.product .txtBox-inner .txtBox1 .price {
+    font-size: 24px;
+    font-family: tahoma,helvetica,"\B098\B214\ACE0\B515","Nanum Gothic","\B098\B214\C2A4\D018\C5B4","Nanum Square","Apple SD Gothic Neo","Malgun Gothic","\B9D1\C740 \ACE0\B515",dotum,"\B3CB\C6C0",sans-serif;
+    font-weight: bold;
+}
+.product .txtBox-inner .txtBox1 .price span {
+    font-size: 18px;
+
+}
+/* product txtBox2 설정 */
+.product .txtBox2 {
+    margin-top: 15px;
+    border: 1px solid #989aa5;
+}
+.product .txtBox2-inner {
+    padding: 19px;
+}
+.product .txtBox2-inner h2 {
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    font-family: Helvetica, '나눔고딕', 'Nanum Gothic', '나눔스퀘어', 'Nanum Square', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', sans-serif;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.product .txtBox2-inner .txtBox2-1 {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.product .txtBox2-inner .txtBox2-1 strong {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333333;
+    vertical-align: top;
+}
+.product .txtBox2-inner .txtBox2-1 .point {
+    font-family: tahoma, helvetica, "\B098\B214\ACE0\B515", "Nanum Gothic", "\B098\B214\C2A4\D018\C5B4", "Nanum Square", "Apple SD Gothic Neo", "Malgun Gothic", "\B9D1\C740 \ACE0\B515", dotum, "\B3CB\C6C0", sans-serif;
+    margin-top: -2px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333333;
+}
+.product .txtBox2-inner .txtBox2-1 .point p {
+    font-weight: bold;
+}
+.product .txtBox2-inner .txtBox2-2 {
+    font-size: 12px;
+    line-height: 18px;
+    color: #999999;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+.product .txtBox2-inner .txtBox2-3 {
+    margin-top: 15px;
+}
+.product .txtBox2-inner .txtBox2-3-inner {
+    padding: 12px 16px;
+    border: 1px solid #dce0e3;
+    background-color: #f7f8fa;
+    word-break: break-all;
+}
+.product .txtBox2-inner .txtBox2-3-inner .tip {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 15px;
+    color: #333333;
+}
+.product .txtBox2-inner .txtBox2-3-inner .tip-margin {
+    margin-top: 10px;
+}
+.product .txtBox2-inner .txtBox2-3-inner .tip-1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.product .txtBox2-inner .txtBox2-3-inner .tip-1 .member {
+    display: flex;
+}
+.product .txtBox2-inner .txtBox2-3-inner .tip-1 .member span {
+    margin-right: 4px;
+}
+.product .txtBox2-inner .txtBox2-3-inner .tip-1 a {
+    color: #999999;
+    font-size: 12px;
+}
+.product .txtBox2-inner .txtBox2-3-inner .tip-1 a span {
+    text-decoration: underline;
+}
+.product .txtBox2-inner .txtBox2-3-inner .tip-1 p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
+}
+/* product banner 설정 */
+.product .banner {
+    width: 100%;
+    height: auto;
+    margin-top: 11px;
+}
+.product .banner img {
+    width: 100%;
+    height: 100%;
+}
+/* product card 설정 */
+.product .card {
+    margin-top: 16px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #ededed;
+}
+.product .card p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+}
+.product .card span {
+    color: #e9e9e9;
+}
+.product .num {
+    padding: 11px 0 12px 1px;
+    line-height: 21px;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px solid #ededed;
+}
+.product .deliver {
+    margin-top: 12px;
+    padding-bottom: 16px;
+    font-size: 13px;
+    border-bottom: 1px solid #ededed;
+}
+.product .deliver-1 span {
+    color: #e9e9e9;
+}
+.product .deliver-2 {
+    margin-top: 3px;
+    padding-left: 1px;
+    color: #999999;
+    line-height: 18px;
+    word-break: break-all;
+}
+.product .deliver-3 {
+    color: #eae1d8;
+}
+.product .deliver-3 a {
+    text-decoration: underline;
+    color: #a26f59;
+    font-size: 13px;
+    line-height: 18px;
+    vertical-align: top;
+}
+
+/* .product option 설정  */
+.select-wrapper {
+    position: relative;
+}
+
+.option {
+    position: relative;
+    z-index: 100;
+    margin-top: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 34px;
+    box-sizing: border-box;
+    padding: 12px 13px;
+    padding: 0 10px 0 15px;
+    border: 1px solid #d2d6dd;
+    color: #333333;
+    background-color: #ffffff;
+}
+.option span {
+    font-size: 13px;
+    color: #333333;
+}
+.option i {
+    font-size: 24px;
+    color: rgb(172, 178, 188);
+}
+.option:focus{
+    z-index: 100;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.listbox {
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    background: #FFFFFF;
+    border: 1px solid #d2d6dd;
+    overflow: hidden;
+    top: 99%;
+    left: -1px;
+    z-index: 1;
+    margin-top: -1px;
+    border: 1px solid #9ca3ab;
+}
+.listbox.hide {
+    display: none;
+}
+
+.list {
+    width: 100%;
+    display: block;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    line-height: 36px;
+    white-space: nowrap;
+    height: 36px;
+    padding-left: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    color: #666666;
+    text-align: left;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.list:hover {
+    background-color: #f6f7f9;
+    color: #000;
+}
+
+
+/* 옵션 선택 */
+.select-option ul {
+    margin-top: -1px;
+    -webkit-box-shadow: inset 0 1px 0 0 #c7c7c7, inset 0 -1px 0 0 #c7c7c7;
+    box-shadow: inset 0 1px 0 0 #c7c7c7, inset 0 -1px 0 0 #c7c7c7;
+}
+.select-option li {
+    position: relative;
+    padding: 15px 14px 15px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: none;
+}
+.select-option li.show {
+    display: block;
+}
+.select-option .title {
+    margin: 0 119px 12px 0;
+    color: #333333;
+    line-height: 20px;
+    font-size: 13px;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+.select-option .optionBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.select-option .optionBox .plus-minus {
+    min-width: 114px;
+    height: 100%;
+    border: solid 1px #dde0e3;
+}
+.select-option .optionBox .plus-minus button {
+    width: 34px;
+    height: 100%;
+    background-color: #f1f2f4;
+
+}
+.select-option .optionBox .plus-minus .minus {
+    margin-right: -5px;
+}
+.select-option .optionBox input {
+    width: 44px;
+    height: 100%;
+    border: solid #eff1f5;
+    border-width: 0 1px;
+    vertical-align: top;
+    font-family: tahoma, helvetica, "\B098\B214\ACE0\B515", "Nanum Gothic", "\B098\B214\C2A4\D018\C5B4", "Nanum Square", "Apple SD Gothic Neo", "Malgun Gothic", "\B9D1\C740 \ACE0\B515", dotum, "\B3CB\C6C0", sans-serif;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 34px;
+    text-align: center;
+    padding: 0 10px;
+    margin-right: -5px;
+}
+.select-option .option-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-option .option-price .cancle {
+    padding: 0 !important;
+    font-size: 20px;
+    margin-left: 4px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* .product .last 설정 */
+.product .last {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product .last strong {
+    font-size: 13px;
+}
+.product .last-1 {
+    display: flex;
+    align-items: center;
+}
+.product .last-1 p {
+    padding-right: 8px;
+    color: #999999;
+    vertical-align: top;
+    font-size: 13px;
+}
+.product .last-1 strong {
+    color: #d40022;
+    font-size: 24px;
+    font-family: tahoma, helvetica, "\B098\B214\ACE0\B515", "Nanum Gothic", "\B098\B214\C2A4\D018\C5B4", "Nanum Square", "Apple SD Gothic Neo", "Malgun Gothic", "\B9D1\C740 \ACE0\B515", dotum, "\B3CB\C6C0", sans-serif;
+    font-weight: bold;
+}
+
+/* .product .buy-btn 설정 */
+.buy-btn {
+    width: 100%;
+    padding-top: 16px;
+}
+.buy-btn .buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #00de5a;
+    cursor: pointer;
+}
+.buy-btn .buy:hover {
+    background-color: #25ce63;
+}
+.buy-btn .HM {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buy-btn .HM>div {
+    width: 49.5%;
+    height: 50px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.buy-btn .HM .heart-btn {
+    border: 1px solid #dcdcdc;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #fff;
+    text-align: center;
+}
+.buy-btn .HM .heart-btn:hover {
+    border-color: rgba(0,0,0,.53);
+    background-color: #fafafa;
+}
+.buy-btn .HM .market-btn {
+    border: 1px solid #03c75a;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.buy-btn .HM .market-btn:hover {
+    border-color: #029f48;
+    background-color: #fafafa;
+}
+/* .product .buy-info 설정 */
+.product .buy-info {
+    margin-top: 14px;
+}
+.product .buy-info .buy-info-top {
+    margin-bottom: 4px;
+}
+.product .buy-info-1 p {
+    color: #999;
+    font-size: 12px;
+}
+.product .buy-info-1 p::before{
+    background-image: url(https://static-resource-smartstore.pstatic.net/brandstore/p/static/20240306175653/img/sprite/png/spIcon_png.png);
+    background-size: 217px 130px;
+    background-position: -158px -67px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: top;
+    content: "";
+}
+.product .buy-info-1 p a {
+    margin-left: 5px;
+    color: #00c73c;
+    font-weight: bold;
+}
+/* .reviewBox 설정 */
+.reviewBox {
+    padding: 30px 0 2px;
+    margin-bottom: 40px;
+}
+.reviewBox-Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviewBox-Top .title {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 700;
+}
+.reviewBox-Top .title strong {
+    color: #000;
+}
+.reviewBox-Top .all {
+    color: #8f8f8f;
+    font-size: 12px;
+}
+.reviewBox-Top .all i {
+    padding: 2px;
+    border: solid 1px #e0e0e0;
+    color: #555;
+    font-size: 14px;
+}
+.reviewBox ul {
+    margin: 19px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.reviewBox ul li {
+    width: 48%;
+}
+.reviewBox ul .border-right {
+    padding-right: 2.2%;
+    border-right: 1px solid #f2f2f2;
+}
+.reviewBox ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.reviewBox ul .review-top {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 20px;
+}
+.reviewBox ul li a .txtBox {
+    width: 80%;
+}
+.reviewBox ul li a .imgBox {
+    width: 15%;
+}
+.reviewBox ul li a .imgBox img {
+    width: 100%;
+}
+.reviewBox ul li .txtBox .stars {
+    display: flex;
+    width: 22%;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviewBox ul li .txtBox .star {
+    background-image: url(https://static-resource-smartstore.pstatic.net/brandstore/p/static/20240306175653/img/sprite/svg/spIcon_svg.svg);
+    background-size: 831px 820px;
+    background-position: -661px -101px;
+    width: 74px;
+    height: 14px;
+}
+.reviewBox ul li .txtBox .star .blind {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+.reviewBox ul li .txtBox .stars strong {
+    display: inline-block;
+    margin-left: 5px;
+    font-family: tahoma,helvetica,"\B098\B214\ACE0\B515","Nanum Gothic","\B098\B214\C2A4\D018\C5B4","Nanum Square","Apple SD Gothic Neo","Malgun Gothic","\B9D1\C740 \ACE0\B515",dotum,"\B3CB\C6C0",sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    color: #000;
+    vertical-align: top;
+}
+.reviewBox ul li .txtBox .customer {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    line-height: 16px;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    margin-top: 6px;
+    padding-right: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #999;
+}
+.reviewBox ul li .txtBox .review-txt {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #5f5f5f;
+    word-break: break-all;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 18px;
+}
+.reviewBox ul li .txtBox .review-txt .month {
+    padding: 1px 3px 1px 2px;
+    border: 1px solid #79a6ea;
+    background-color: #fff;
+    font-family: Dotum,NanumGothic,sans-serif;
+    line-height: 1.3em;
+    letter-spacing: -1px;
+    color: #5f96ec;
+    margin-right: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

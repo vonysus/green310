@@ -217,6 +217,7 @@ button {
     color: #222;
     word-break: break-all;
     word-wrap: break-word;
+    line-height: 28px;
 }
 .product .txtBox-inner .txtBox1 {
     position: relative;
@@ -315,9 +316,7 @@ button {
     width: 100%;
     justify-content: space-between;
     font-size: 13px;
-    font-weight: bold;
     line-height: 15px;
-    color: #333333;
 }
 .product .txtBox2-inner .txtBox2-3-inner .tip-margin {
     margin-top: 10px;
@@ -587,7 +586,6 @@ input::-webkit-inner-spin-button {
     font-size: 13px;
 }
 .product .last-1 strong {
-    color: #d40022;
     font-size: 24px;
     font-family: tahoma, helvetica, "\B098\B214\ACE0\B515", "Nanum Gothic", "\B098\B214\C2A4\D018\C5B4", "Nanum Square", "Apple SD Gothic Neo", "Malgun Gothic", "\B9D1\C740 \ACE0\B515", dotum, "\B3CB\C6C0", sans-serif;
     font-weight: bold;

@@ -78,13 +78,14 @@ $(function(){
             });
         }
     
-    // 총 수량 및 총 상품 금액 업데이트 함수
+
+// 총 수량 및 총 상품 금액 업데이트 함수
 function updateTotal() {
     let totalQuantity = 0;
     let totalPrice = 0;
 
     $('.select-option ul li').each(function() {
-        let quantity = parseInt($(this).find('.input-1').val());
+        let quantity = parseInt($(this).find('.plus-minus .input-1').val());
         totalQuantity += quantity;
         totalPrice += quantity * parseInt($(this).find('.option-price-1').text().replace(/[^0-9]/g, ''));
     });
@@ -93,14 +94,33 @@ function updateTotal() {
     $('.last-price').text(totalPrice.toLocaleString());
 }
 
-// cancle 클릭시 안보이게 및 총 가격 업데이트
+// .plus 버튼 클릭 시 총 수량 및 총 가격 업데이트
+$('.select-option').on('click', '.plus', function() {
+    updateTotal();
+});
+
+// .select-wrapper ul li 클릭 시 총 수량 및 총 가격 업데이트
+$('.select-wrapper ul').on('click', 'li', function() {
+    updateTotal();
+});
+
+// li 삭제 버튼이 클릭될 때 총 가격을 업데이트합니다.
 $('.select-option').on('click', '.cancle', function() {
     var priceToRemove = parseInt($(this).closest('.optionBox').find('.option-price-1').text().replace(/[^0-9]/g, ''));
     var quantityToRemove = parseInt($(this).siblings('.plus-minus').find('.input-1').val());
     var totalPriceToRemove = priceToRemove * quantityToRemove;
 
-    $(this).closest('li').remove(); // 선택한 항목 삭제
-    updateTotal(); // 총 수량 및 총 가격 업데이트
+    // 클릭된 요소의 부모 li 요소의 클래스를 가져옵니다.
+    var className = $(this).closest('li').attr('class');
+
+    // 총 가격을 업데이트합니다.
+    updateTotalPrice(totalPriceToRemove);
+
+    // 해당 클래스를 가진 li 요소를 제거합니다.
+    $('.select-option ul .' + className).remove();
+
+    // 총 수량 및 총 가격 업데이트
+    updateTotal();
 });
 
 // li 갯수를 계산하여 .last-num에 입력하는 함수
@@ -137,61 +157,7 @@ $('.select-option ul').on('DOMNodeInserted DOMNodeRemoved', 'li', function() {
     updateTotalPrice();
 });
 
-// li 삭제 버튼이 클릭될 때 총 가격을 업데이트합니다.
-$('.select-option').on('click', '.cancle', function() {
-    // 클릭된 요소의 가격을 가져옵니다.
-    var priceToRemove = parseInt($(this).closest('.optionBox').find('.option-price-1').text().replace(/[^0-9]/g, ''));
 
-    // 총 가격을 업데이트합니다.
-    updateTotalPrice(priceToRemove);
-
-    // 클릭된 요소의 부모 li 요소의 클래스를 가져옵니다.
-    var className = $(this).closest('li').attr('class');
-
-    // 해당 클래스를 가진 li 요소를 제거합니다.
-    $('.select-option ul .' + className).remove();
-
-    // li 요소가 제거되면 .last-num을 업데이트합니다.
-    updateLastNum();
-
-
-});
-
-// 총 수량 및 총 상품 금액 업데이트 함수
-function updateTotal() {
-    let totalQuantity = 0;
-    let totalPrice = 0;
-
-    $('.select-option ul li').each(function() {
-        let quantity = parseInt($(this).find('.input-1').val());
-        totalQuantity += quantity;
-        totalPrice += quantity * parseInt($(this).find('.option-price-1').text().replace(/[^0-9]/g, ''));
-    });
-
-    $('.last-num').text(totalQuantity);
-    $('.last-price').text(totalPrice.toLocaleString());
-}
-
-// li 삭제 버튼이 클릭될 때 총 가격을 업데이트합니다.
-$('.select-option').on('click', '.cancle', function() {
-    // 클릭된 요소의 가격을 가져옵니다.
-    var priceToRemove = parseInt($(this).closest('.option-price').find('.option-price-1').text().replace(/[^0-9]/g, ''));
-    
-    // 클릭된 요소의 수량을 가져옵니다.
-    var quantityToRemove = parseInt($(this).siblings('.plus-minus').find('.input-1').val());
-    
-    // 삭제될 옵션의 가격을 총 가격에서 차감합니다.
-    var totalPriceToRemove = priceToRemove * quantityToRemove;
-    
-    // 총 가격을 업데이트합니다.
-    updateTotalPrice(totalPriceToRemove);
-
-    // 선택한 항목 삭제
-    $(this).closest('li').remove(); 
-    
-    // 총 수량 및 총 가격 업데이트
-    updateTotal();
-});
 
 
 
